@@ -1,0 +1,35 @@
+{
+  "Name": "Mental rotation",
+  "TaskName": "Mental rotation",
+  "Description": "A mental rotation task in which participants judge whether two three-dimensional geometric figures are the same object in different orientations or mirror images.",
+  "Instructions": "Participants viewed pairs of 3D figures and responded using the keyboard whether the figures were the same or different.",
+  "Reference": "Shepard and Metzler (1971)",
+  "StimulusPresentation": {
+    "StimulusType": "3D geometric figures",
+    "StimulusDuration": 5,
+    "FixationDuration": 0.5,
+    "Unit": "seconds"
+  },
+  "RotationAngles": [
+    60,
+    105,
+    150
+  ],
+  "TaskStructure": {
+    "TrainingTrials": 6,
+    "MainTrials": 216,
+    "StandardFigures": 9,
+    "FigureVariations": 2
+  },
+  "ResponseOptions": {
+    "left": "same",
+    "right": "different"
+  },
+  "Software": "PsychoPy 2022.5.5",
+  "Modality": "behavioral",
+  "Comments": [
+    "Angles of 180 degrees and below 40 degrees were avoided.",
+    "The task was used to assess spatial imagery and mental transformation ability.",
+    "Responses were collected via keyboard."
+  ]
+}

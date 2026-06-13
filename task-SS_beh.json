@@ -1,0 +1,39 @@
+{
+  "Name": "Spatial n-back",
+  "TaskName": "SS",
+  "Description": "A continuous working memory task in which participants monitor the spatial location of sequentially presented stimuli and indicate whether the current stimulus matches the location presented two trials earlier (2-back).",
+  "Instructions": "Participants viewed a red dot appearing one at a time in a 4×5 grid and responded using the keyboard whether the current location matched the location from two steps back.",
+  "Reference": "Lejbak et al. (2011)",
+  "NBackLevel": 2,
+  "StimulusPresentation": {
+    "StimulusType": "red dot",
+    "Display": "4x5 grid",
+    "StimulusDuration": 3,
+    "InterStimulusInterval": 0,
+    "FixationDuration": 6,
+    "Unit": "seconds"
+  },
+  "TaskStructure": {
+    "TrainingBlocks": 1,
+    "MainBlocks": 36,
+    "TrialsPerBlock": 8,
+    "ResponseStartTrial": 3
+  },
+  "ResponseOptions": {
+    "left": "same",
+    "right": "different"
+  },
+  "Timing": {
+    "SingleBlockDuration": 24,
+    "TotalTaskDuration": 1200,
+    "Unit": "seconds"
+  },
+  "Software": "PsychoPy 2022.5.5",
+  "Modality": "behavioral",
+  "EstimatedEffectSize": "medium to large",
+  "Comments": [
+    "Participants responded only after the third location was presented.",
+    "The task was administered on a black background with white text.",
+    "All inputs were collected from the keyboard."
+  ]
+}

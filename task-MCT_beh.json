@@ -1,0 +1,37 @@
+{
+  "Name": "Missing color task",
+  "TaskName": "Missing color task",
+  "Description": "A color imagery task in which participants infer a missing color in a sequence of color stimuli by applying the same rule as in a reference sequence and then choose the correct option from two alternatives.",
+  "Instructions": "Participants viewed two sequential color rows, inferred the missing color in the second row by analogy to the reference row, and selected the matching color option using the keyboard.",
+  "StimulusPresentation": {
+    "StimulusType": "color sequences",
+    "SequenceLength": 4,
+    "ReferenceSequenceDuration": 2.5,
+    "MaskedIntervalDuration": 1,
+    "FixationDuration": 0.5,
+    "ResponseWindow": 5,
+    "Unit": "seconds"
+  },
+  "ColorSpace": "2014 Material Design color palettes",
+  "ColorEncoding": "RGB",
+  "TaskStructure": {
+    "TrainingTrials": 4,
+    "MainTrials": 120
+  },
+  "DifficultyLevels": [
+    "high",
+    "low",
+    "no difficulty"
+  ],
+  "ResponseOptions": {
+    "left": "correct missing color",
+    "right": "distractor"
+  },
+  "Software": "PsychoPy 2022.5.5",
+  "Modality": "behavioral",
+  "Comments": [
+    "The task was designed to assess object imagery.",
+    "No feedback was given during the main trials.",
+    "Participants were encouraged to respond as quickly and accurately as possible."
+  ]
+}

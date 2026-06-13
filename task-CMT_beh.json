@@ -1,0 +1,35 @@
+{
+  "Name": "Color-matching task",
+  "TaskName": "CMT",
+  "Description": "A visuospatial working memory task in which participants compare the relevant colors of the current stimulus with those of the immediately preceding stimulus and indicate whether they match.",
+  "Instructions": "Participants viewed series of colored figures and responded using the keyboard whether the relevant colors in the current figure matched the previous figure, ignoring color position and irrelevant features.",
+  "Reference": "Arsalidou et al. (2010)",
+  "TaskVariant": "balloon",
+  "StimulusPresentation": {
+    "StimulusType": "colored figure",
+    "Display": "3x3 grid",
+    "StimulusDuration": 2,
+    "InterStimulusInterval": 1,
+    "Unit": "seconds"
+  },
+  "TaskStructure": {
+    "TrainingBlocks": 1,
+    "MainBlocks": 6,
+    "BlockTypes": [
+      "4 color sets",
+      "5 color sets",
+      "6 color sets"
+    ]
+  },
+  "ResponseOptions": {
+    "left": "same",
+    "right": "different"
+  },
+  "Software": "PsychoPy 2022.5.5",
+  "Modality": "behavioral",
+  "Comments": [
+    "Only the balloon version was used.",
+    "Task difficulty was manipulated by varying the number of relevant colors.",
+    "Blocks were presented in increasing order of color-set complexity."
+  ]
+}
