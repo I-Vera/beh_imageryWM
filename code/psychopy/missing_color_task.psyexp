@@ -1,0 +1,869 @@
+﻿<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="2023.1.0">
+  <Settings>
+    <Param val="use prefs" valType="str" updates="None" name="Audio latency priority"/>
+    <Param val="use prefs" valType="str" updates="None" name="Audio lib"/>
+    <Param val="" valType="str" updates="None" name="Completed URL"/>
+    <Param val="auto" valType="str" updates="None" name="Data file delimiter"/>
+    <Param val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code" updates="None" name="Data filename"/>
+    <Param val="True" valType="bool" updates="None" name="Enable Escape"/>
+    <Param val="" valType="str" updates="None" name="End Message"/>
+    <Param val="{'participant': '', 'session': '001'}" valType="code" updates="None" name="Experiment info"/>
+    <Param val="True" valType="bool" updates="None" name="Force stereo"/>
+    <Param val="True" valType="bool" updates="None" name="Full-screen window"/>
+    <Param val="" valType="str" updates="None" name="HTML path"/>
+    <Param val="" valType="str" updates="None" name="Incomplete URL"/>
+    <Param val="testMonitor" valType="str" updates="None" name="Monitor"/>
+    <Param val="[]" valType="list" updates="None" name="Resources"/>
+    <Param val="False" valType="bool" updates="None" name="Save csv file"/>
+    <Param val="False" valType="bool" updates="None" name="Save excel file"/>
+    <Param val="False" valType="bool" updates="None" name="Save hdf5 file"/>
+    <Param val="True" valType="bool" updates="None" name="Save log file"/>
+    <Param val="True" valType="bool" updates="None" name="Save psydat file"/>
+    <Param val="True" valType="bool" updates="None" name="Save wide csv file"/>
+    <Param val="1" valType="num" updates="None" name="Screen"/>
+    <Param val="True" valType="bool" updates="None" name="Show info dlg"/>
+    <Param val="False" valType="bool" updates="None" name="Show mouse"/>
+    <Param val="height" valType="str" updates="None" name="Units"/>
+    <Param val="" valType="str" updates="None" name="Use version"/>
+    <Param val="[1536, 864]" valType="list" updates="None" name="Window size (pixels)"/>
+    <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+    <Param val="" valType="str" updates="None" name="backgroundImg"/>
+    <Param val="avg" valType="str" updates="None" name="blendMode"/>
+    <Param val="black" valType="color" updates="None" name="color"/>
+    <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+    <Param val="100.1.1.1" valType="str" updates="None" name="elAddress"/>
+    <Param val="FILTER_LEVEL_2" valType="str" updates="None" name="elDataFiltering"/>
+    <Param val="FILTER_LEVEL_OFF" valType="str" updates="None" name="elLiveFiltering"/>
+    <Param val="EYELINK 1000 DESKTOP" valType="str" updates="None" name="elModel"/>
+    <Param val="ELLIPSE_FIT" valType="str" updates="None" name="elPupilAlgorithm"/>
+    <Param val="PUPIL_AREA" valType="str" updates="None" name="elPupilMeasure"/>
+    <Param val="1000" valType="num" updates="None" name="elSampleRate"/>
+    <Param val="False" valType="bool" updates="None" name="elSimMode"/>
+    <Param val="RIGHT_EYE" valType="str" updates="None" name="elTrackEyes"/>
+    <Param val="PUPIL_CR_TRACKING" valType="str" updates="None" name="elTrackingMode"/>
+    <Param val="MCT" valType="str" updates="None" name="expName"/>
+    <Param val="on Sync" valType="str" updates="None" name="exportHTML"/>
+    <Param val="None" valType="str" updates="None" name="eyetracker"/>
+    <Param val="127.0.0.1" valType="str" updates="None" name="gpAddress"/>
+    <Param val="4242" valType="num" updates="None" name="gpPort"/>
+    <Param val="ioHub" valType="str" updates="None" name="keyboardBackend"/>
+    <Param val="exp" valType="code" updates="None" name="logging level"/>
+    <Param val="('MIDDLE_BUTTON',)" valType="list" updates="None" name="mgBlink"/>
+    <Param val="CONTINUOUS" valType="str" updates="None" name="mgMove"/>
+    <Param val="0.5" valType="num" updates="None" name="mgSaccade"/>
+    <Param val="0.6" valType="num" updates="None" name="plConfidenceThreshold"/>
+    <Param val="True" valType="bool" updates="None" name="plPupilCaptureRecordingEnabled"/>
+    <Param val="" valType="str" updates="None" name="plPupilCaptureRecordingLocation"/>
+    <Param val="127.0.0.1" valType="str" updates="None" name="plPupilRemoteAddress"/>
+    <Param val="50020" valType="num" updates="None" name="plPupilRemotePort"/>
+    <Param val="1000" valType="num" updates="None" name="plPupilRemoteTimeoutMs"/>
+    <Param val="False" valType="bool" updates="None" name="plPupillometryOnly"/>
+    <Param val="psychopy_iohub_surface" valType="str" updates="None" name="plSurfaceName"/>
+    <Param val="" valType="str" updates="None" name="tbLicenseFile"/>
+    <Param val="" valType="str" updates="None" name="tbModel"/>
+    <Param val="60" valType="num" updates="None" name="tbSampleRate"/>
+    <Param val="" valType="str" updates="None" name="tbSerialNo"/>
+    <Param val="pyglet" valType="str" updates="None" name="winBackend"/>
+  </Settings>
+  <Routines>
+    <Routine name="CC_trial">
+      <PolygonComponent name="clr1examp" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="$clr1p1" valType="color" updates="set every repeat" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="white" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="clr1examp" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(-0.3375, 0.075)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="rectangle" valType="str" updates="None" name="shape"/>
+        <Param val="(0.1, 0.1)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="2.5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+      <PolygonComponent name="clr2examp" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="$clr2p1" valType="color" updates="set every repeat" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="white" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="clr2examp" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(-0.1125, 0.075)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="rectangle" valType="str" updates="None" name="shape"/>
+        <Param val="(0.1, 0.1)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="2.5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+      <PolygonComponent name="clr3examp" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="$clr3p1" valType="color" updates="set every repeat" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="white" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="clr3examp" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0.1125, 0.075)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="rectangle" valType="str" updates="None" name="shape"/>
+        <Param val="(0.1, 0.1)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="2.5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+      <PolygonComponent name="clr4examp" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="$clr4p1" valType="color" updates="set every repeat" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="white" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="clr4examp" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0.3375, 0.075)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="rectangle" valType="str" updates="None" name="shape"/>
+        <Param val="(0.1, 0.1)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="2.5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+      <PolygonComponent name="clr1trial" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="$clr1p2" valType="color" updates="set every repeat" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="white" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="clr1trial" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(-0.3375, -0.1)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="rectangle" valType="str" updates="None" name="shape"/>
+        <Param val="(0.1, 0.1)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="2.5" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="2.5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+      <PolygonComponent name="clr2trail" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="$clr2p2" valType="color" updates="set every repeat" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="white" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="clr2trail" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(-0.1125, -0.1)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="rectangle" valType="str" updates="None" name="shape"/>
+        <Param val="(0.1, 0.1)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="2.5" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="2.5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+      <PolygonComponent name="clr3trail" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="$clr3p2" valType="color" updates="set every repeat" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="white" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="clr3trail" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0.1125, -0.1)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="rectangle" valType="str" updates="None" name="shape"/>
+        <Param val="(0.1, 0.1)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="2.5" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="2.5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+      <PolygonComponent name="clr4trail" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="$clr4p2" valType="color" updates="set every repeat" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="white" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="clr4trail" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0.3375, -0.1)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="rectangle" valType="str" updates="None" name="shape"/>
+        <Param val="(0.1, 0.1)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="2.5" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="2.5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+      <KeyboardComponent name="key_skip" plugin="None">
+        <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="key_skip" valType="code" updates="None" name="name"/>
+        <Param val="press" valType="str" updates="constant" name="registerOn"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="6" valType="code" updates="constant" name="stopVal"/>
+        <Param val="nothing" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+      <PolygonComponent name="MASKclr1tr" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="black" valType="color" updates="set every repeat" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="white" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="MASKclr1tr" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(-0.3375, -0.1)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="rectangle" valType="str" updates="None" name="shape"/>
+        <Param val="(0.1, 0.1)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="5" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="1" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+      <PolygonComponent name="MASKclr2tr" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="black" valType="color" updates="set every repeat" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="white" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="MASKclr2tr" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(-0.1125, -0.1)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="rectangle" valType="str" updates="None" name="shape"/>
+        <Param val="(0.1, 0.1)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="5" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="1" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+      <PolygonComponent name="MASKclr3tr" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="black" valType="color" updates="set every repeat" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="white" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="MASKclr3tr" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0.1125, -0.1)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="rectangle" valType="str" updates="None" name="shape"/>
+        <Param val="(0.1, 0.1)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="5" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="1" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+      <PolygonComponent name="MASKclr4tr" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="black" valType="color" updates="set every repeat" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="white" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="MASKclr4tr" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0.3375, -0.1)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="rectangle" valType="str" updates="None" name="shape"/>
+        <Param val="(0.1, 0.1)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="5" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="1" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+    </Routine>
+    <Routine name="CC_answer">
+      <PolygonComponent name="l_point" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="$l_test" valType="color" updates="set every repeat" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="white" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="l_point" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(-0.2, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="rectangle" valType="str" updates="None" name="shape"/>
+        <Param val="(0.1, 0.1)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="5.0" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+      <PolygonComponent name="r_point" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="$r_test" valType="color" updates="set every repeat" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="white" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="r_point" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0.2, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="rectangle" valType="str" updates="None" name="shape"/>
+        <Param val="(0.1, 0.1)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="5.0" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+      <KeyboardComponent name="CC_resp" plugin="None">
+        <Param val="'left','right'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="$answ" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="CC_resp" valType="code" updates="None" name="name"/>
+        <Param val="press" valType="str" updates="constant" name="registerOn"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="True" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="blank">
+      <PolygonComponent name="fix" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="white" valType="color" updates="constant" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="white" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="fix" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="cross" valType="str" updates="None" name="shape"/>
+        <Param val="(0.08, 0.08)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="0.8" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+    </Routine>
+    <Routine name="CC_trainAnsw">
+      <PolygonComponent name="l_point_2" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="$l_test" valType="color" updates="set every repeat" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="white" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="l_point_2" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(-0.2, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="rectangle" valType="str" updates="None" name="shape"/>
+        <Param val="(0.1, 0.1)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="5.0" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+      <PolygonComponent name="r_point_2" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="$r_test" valType="color" updates="set every repeat" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="white" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="r_point_2" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0.2, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="rectangle" valType="str" updates="None" name="shape"/>
+        <Param val="(0.1, 0.1)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="5.0" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+      <KeyboardComponent name="CC_resp_2" plugin="None">
+        <Param val="'left','right', 'space'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="$answ" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="CC_resp_2" valType="code" updates="None" name="name"/>
+        <Param val="press" valType="str" updates="constant" name="registerOn"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="5" valType="code" updates="constant" name="stopVal"/>
+        <Param val="last key" valType="str" updates="constant" name="store"/>
+        <Param val="True" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="FB">
+      <CodeComponent name="loop_stop" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="msg='empty!'#if this comes up we forgot to update the msg!" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="msg = &quot;empty!&quot;;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="if ((! CC_resp_2.keys)) {&amp;#10;    msg = &quot;\u041d\u0435\u0442 \u043e\u0442\u0432\u0435\u0442\u0430&quot;;&amp;#10;} else {&amp;#10;    if (CC_resp_2.corr) {&amp;#10;        msg = &quot;\u0414\u0430! \u041f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439 \u0446\u0432\u0435\u0442:&quot;;&amp;#10;    } else {&amp;#10;        msg = &quot;\u041d\u0435\u0442! \u0412\u043e\u0442 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u044b\u0439:&quot;;&amp;#10;    }&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="if not CC_resp_2.keys :&amp;#10;    msg=&quot;Нет ответа&quot;&amp;#10;elif CC_resp_2.corr:#stored on last run routine&amp;#10;    msg=&quot;Да! Правильный цвет:&quot;&amp;#10;else:&amp;#10;    msg=&quot;Нет! Вот правильный:&quot;&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="if ((training.thisN === 3)) {&amp;#10;    currentLoop.finished = true;&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="if training.thisN == 3:&amp;#10;    currentLoop.finished = True" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="loop_stop" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <TextComponent name="FB_txt" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="FB_txt" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0.1)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="2.0" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="$msg" valType="str" updates="set every repeat" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <PolygonComponent name="FB_clr" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="$realclr" valType="color" updates="set every repeat" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="white" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="FB_clr" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="rectangle" valType="str" updates="None" name="shape"/>
+        <Param val="(0.1, 0.1)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="2.0" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+    </Routine>
+    <Routine name="finish">
+      <TextComponent name="finish_txt" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="finish_txt" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="3.0" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Это мучение закончилось!&amp;#10;Подождите, когда эксперимент закроется.&amp;#10;" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="CC_instr2">
+      <TextComponent name="instr2_text" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.04" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="instr2_text" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Отлично! Теперь все по-настоящему, без обратной связи. Пожалуйста, не отвлекайтесь, сосредоточьтесь на задачах.&amp;#10;&amp;#10;Если вы готовы начать основной этап, нажмите ПРОБЕЛ." valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="instr2_resp" plugin="None">
+        <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="instr2_resp" valType="code" updates="None" name="name"/>
+        <Param val="press" valType="str" updates="constant" name="registerOn"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="nothing" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="CC_instr">
+      <TextComponent name="instr_text" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.04" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="instr_text" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Вам будет показаны 2 последовательности цветных квадратов, сделанных по аналогии друг другу. Они будут появляться друг за другом, сначала полная, потом — с одним пропущенным, черным, квадратом.&amp;#10; &amp;#10;Вам нужно представить недостающий цвет согласно последовательности и выбрать тот квадрат из представленных двух вариантов, который соответствует представленному цвету.&amp;#10;Выбор нужного квадрата производится клавишами &quot;←&quot; и &quot;→&quot;.&amp;#10;&amp;#10;Сначала будет тренировочный этап с обратной связью, чтобы вы научились. Будет дано 8 задач.&amp;#10;&amp;#10;Чтобы начать тренировку, нажмите ПРОБЕЛ." valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="instr_resp" plugin="None">
+        <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="instr_resp" valType="code" updates="None" name="name"/>
+        <Param val="press" valType="str" updates="constant" name="registerOn"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="nothing" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="hello">
+      <TextComponent name="hello_txt" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="hello_txt" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Здравствуйте!&amp;#10;&amp;#10;Это основная часть исследования на воображение. Вам будет дана инструкция, после чего вы сможете пройти тренировочный и основной этапы.&amp;#10;&amp;#10;Чтобы перейти дальше, нажмите ПРОБЕЛ." valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+      <KeyboardComponent name="hello_resp" plugin="None">
+        <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
+        <Param val="" valType="str" updates="constant" name="correctAns"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="constant" name="discard previous"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="hello_resp" valType="code" updates="None" name="name"/>
+        <Param val="press" valType="str" updates="constant" name="registerOn"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="nothing" valType="str" updates="constant" name="store"/>
+        <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+      </KeyboardComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="CC_instr"/>
+    <LoopInitiator loopType="TrialHandler" name="training">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'ID': 2, 'clr1p1': '#E0F2F1', 'clr2p1': '#4DB6AC', 'clr3p1': '#00897B', 'clr4p1': '#004D40', 'clr1p2': '#FFFDE7', 'clr2p2': '#000000', 'clr3p2': '#FDD835', 'clr4p2': '#F57F17', 'Hshow': 'teal', 'Htest': 'yellow', 'stim_var': 'l_down', 'blank_clr': 'clr2', 'difficulty': 'high', 'answ': 'left', 'l_test': '#FFF176', 'r_test': '#FFF59D', 'realclr2': '#FFF176', 'realclr3': '#FDD835', 'realclr': '#FFF176', 'fake_hue': 'yellow'}, {'ID': 3, 'clr1p1': '#EFEBE9', 'clr2p1': '#A1887F', 'clr3p1': '#6D4C41', 'clr4p1': '#3E2723', 'clr1p2': '#E8F5E9', 'clr2p2': '#000000', 'clr3p2': '#43A047', 'clr4p2': '#1B5E20', 'Hshow': 'brown', 'Htest': 'green', 'stim_var': 'l_down', 'blank_clr': 'clr2', 'difficulty': 'high', 'answ': 'left', 'l_test': '#81C784', 'r_test': '#A5D6A7', 'realclr2': '#81C784', 'realclr3': '#43A047', 'realclr': '#81C784', 'fake_hue': 'green'}, {'ID': 4, 'clr1p1': '#FFEBEE', 'clr2p1': '#E57373', 'clr3p1': '#E53935', 'clr4p1': '#B71C1C', 'clr1p2': '#FFFDE7', 'clr2p2': '#000000', 'clr3p2': '#FDD835', 'clr4p2': '#F57F17', 'Hshow': 'red', 'Htest': 'yellow', 'stim_var': 'l_down', 'blank_clr': 'clr2', 'difficulty': 'high', 'answ': 'left', 'l_test': '#FFF176', 'r_test': '#FFEE58', 'realclr2': '#FFF176', 'realclr3': '#FDD835', 'realclr': '#FFF176', 'fake_hue': 'yellow'}, {'ID': 5, 'clr1p1': '#FCE4EC', 'clr2p1': '#F06292', 'clr3p1': '#D81B60', 'clr4p1': '#880E4F', 'clr1p2': '#FBE9E7', 'clr2p2': '#000000', 'clr3p2': '#F4511E', 'clr4p2': '#BF360C', 'Hshow': 'pink', 'Htest': 'd_orange', 'stim_var': 'l_down', 'blank_clr': 'clr2', 'difficulty': 'high', 'answ': 'right', 'l_test': '#FFAB91', 'r_test': '#FF8A65', 'realclr2': '#FF8A65', 'realclr3': '#F4511E', 'realclr': '#FF8A65', 'fake_hue': 'd_orange'}, {'ID': 6, 'clr1p1': '#E8F5E9', 'clr2p1': '#81C784', 'clr3p1': '#43A047', 'clr4p1': '#1B5E20', 'clr1p2': '#FFEBEE', 'clr2p2': '#000000', 'clr3p2': '#E53935', 'clr4p2': '#B71C1C', 'Hshow': 'green', 'Htest': 'red', 'stim_var': 'l_down', 'blank_clr': 'clr2', 'difficulty': 'high', 'answ': 'right', 'l_test': '#EF9A9A', 'r_test': '#E57373', 'realclr2': '#E57373', 'realclr3': '#E53935', 'realclr': '#E57373', 'fake_hue': 'red'}, {'ID': 8, 'clr1p1': '#F1F8E9', 'clr2p1': '#AED581', 'clr3p1': '#7CB342', 'clr4p1': '#33691E', 'clr1p2': '#FFF3E0', 'clr2p2': '#000000', 'clr3p2': '#FB8C00', 'clr4p2': '#E65100', 'Hshow': 'l_green', 'Htest': 'orange', 'stim_var': 'l_down', 'blank_clr': 'clr2', 'difficulty': 'low', 'answ': 'left', 'l_test': '#FFB74D', 'r_test': '#FFE0B2', 'realclr2': '#FFB74D', 'realclr3': '#FB8C00', 'realclr': '#FFB74D', 'fake_hue': 'orange'}, {'ID': 9, 'clr1p1': '#EDE7F6', 'clr2p1': '#9575CD', 'clr3p1': '#5E35B1', 'clr4p1': '#311B92', 'clr1p2': '#FFF8E1', 'clr2p2': '#000000', 'clr3p2': '#FFB300', 'clr4p2': '#FF6F00', 'Hshow': 'd_purple', 'Htest': 'amber', 'stim_var': 'l_down', 'blank_clr': 'clr2', 'difficulty': 'low', 'answ': 'right', 'l_test': '#FFC107', 'r_test': '#FFD54F', 'realclr2': '#FFD54F', 'realclr3': '#FFB300', 'realclr': '#FFD54F', 'fake_hue': 'amber'}, {'ID': 10, 'clr1p1': '#E0F2F1', 'clr2p1': '#4DB6AC', 'clr3p1': '#00897B', 'clr4p1': '#004D40', 'clr1p2': '#FBE9E7', 'clr2p2': '#000000', 'clr3p2': '#F4511E', 'clr4p2': '#BF360C', 'Hshow': 'lime', 'Htest': 'd_orange', 'stim_var': 'l_down', 'blank_clr': 'clr2', 'difficulty': 'low', 'answ': 'right', 'l_test': '#FF5722', 'r_test': '#FF8A65', 'realclr2': '#FF8A65', 'realclr3': '#F4511E', 'realclr': '#FF8A65', 'fake_hue': 'd_orange'}, {'ID': 11, 'clr1p1': '#E8EAF6', 'clr2p1': '#7986CB', 'clr3p1': '#3949AB', 'clr4p1': '#1A237E', 'clr1p2': '#FFF3E0', 'clr2p2': '#FFB74D', 'clr3p2': '#000000', 'clr4p2': '#E65100', 'Hshow': 'indigo', 'Htest': 'orange', 'stim_var': 'l_down', 'blank_clr': 'clr3', 'difficulty': 'high', 'answ': 'left', 'l_test': '#FB8C00', 'r_test': '#FF9800', 'realclr2': '#FFB74D', 'realclr3': '#FB8C00', 'realclr': '#FB8C00', 'fake_hue': 'orange'}, {'ID': 12, 'clr1p1': '#FFFDE7', 'clr2p1': '#FFF176', 'clr3p1': '#FDD835', 'clr4p1': '#F57F17', 'clr1p2': '#E0F7FA', 'clr2p2': '#4DD0E1', 'clr3p2': '#000000', 'clr4p2': '#006064', 'Hshow': 'yellow', 'Htest': 'cyan', 'stim_var': 'l_down', 'blank_clr': 'clr3', 'difficulty': 'high', 'answ': 'left', 'l_test': '#00ACC1', 'r_test': '#00BCD4', 'realclr2': '#4DD0E1', 'realclr3': '#00ACC1', 'realclr': '#00ACC1', 'fake_hue': 'cyan'}, {'ID': 14, 'clr1p1': '#FFF8E1', 'clr2p1': '#FFD54F', 'clr3p1': '#FFB300', 'clr4p1': '#FF6F00', 'clr1p2': '#E8EAF6', 'clr2p2': '#7986CB', 'clr3p2': '#000000', 'clr4p2': '#1A237E', 'Hshow': 'amber', 'Htest': 'indigo', 'stim_var': 'l_down', 'blank_clr': 'clr3', 'difficulty': 'high', 'answ': 'right', 'l_test': '#3F51B5', 'r_test': '#3949AB', 'realclr2': '#7986CB', 'realclr3': '#3949AB', 'realclr': '#3949AB', 'fake_hue': 'indigo'}, {'ID': 15, 'clr1p1': '#E1F5FE', 'clr2p1': '#4FC3F7', 'clr3p1': '#039BE5', 'clr4p1': '#01579B', 'clr1p2': '#EDE7F6', 'clr2p2': '#9575CD', 'clr3p2': '#000000', 'clr4p2': '#311B92', 'Hshow': 'l_blue', 'Htest': 'd_purple', 'stim_var': 'l_down', 'blank_clr': 'clr3', 'difficulty': 'low', 'answ': 'left', 'l_test': '#5E35B1', 'r_test': '#7E57C2', 'realclr2': '#9575CD', 'realclr3': '#5E35B1', 'realclr': '#5E35B1', 'fake_hue': 'd_purple'}, {'ID': 16, 'clr1p1': '#FFF3E0', 'clr2p1': '#FFB74D', 'clr3p1': '#FB8C00', 'clr4p1': '#E65100', 'clr1p2': '#FCE4EC', 'clr2p2': '#F06292', 'clr3p2': '#000000', 'clr4p2': '#880E4F', 'Hshow': 'orange', 'Htest': 'pink', 'stim_var': 'l_down', 'blank_clr': 'clr3', 'difficulty': 'low', 'answ': 'left', 'l_test': '#D81B60', 'r_test': '#EC407A', 'realclr2': '#F06292', 'realclr3': '#D81B60', 'realclr': '#D81B60', 'fake_hue': 'pink'}, {'ID': 17, 'clr1p1': '#F3E5F5', 'clr2p1': '#BA68C8', 'clr3p1': '#8E24AA', 'clr4p1': '#4A148C', 'clr1p2': '#FBE9E7', 'clr2p2': '#FFB74D', 'clr3p2': '#000000', 'clr4p2': '#BF360C', 'Hshow': 'purple', 'Htest': 'd_orange', 'stim_var': 'l_down', 'blank_clr': 'clr3', 'difficulty': 'low', 'answ': 'left', 'l_test': '#F4511E', 'r_test': '#D84315', 'realclr2': '#FF8A65', 'realclr3': '#F4511E', 'realclr': '#F4511E', 'fake_hue': 'd_orange'}, {'ID': 18, 'clr1p1': '#FFF8E1', 'clr2p1': '#FFD54F', 'clr3p1': '#FFB300', 'clr4p1': '#FF6F00', 'clr1p2': '#EFEBE9', 'clr2p2': '#A1887F', 'clr3p2': '#000000', 'clr4p2': '#3E2723', 'Hshow': 'amber', 'Htest': 'brown', 'stim_var': 'l_down', 'blank_clr': 'clr3', 'difficulty': 'low', 'answ': 'left', 'l_test': '#6D4C41', 'r_test': '#8D6E63', 'realclr2': '#A1887F', 'realclr3': '#6D4C41', 'realclr': '#6D4C41', 'fake_hue': 'brown'}, {'ID': 20, 'clr1p1': '#FBE9E7', 'clr2p1': '#FF8A65', 'clr3p1': '#F4511E', 'clr4p1': '#BF360C', 'clr1p2': '#F3E5F5', 'clr2p2': '#BA68C8', 'clr3p2': '#000000', 'clr4p2': '#4A148C', 'Hshow': 'd_orange', 'Htest': 'purple', 'stim_var': 'l_down', 'blank_clr': 'clr3', 'difficulty': 'low', 'answ': 'right', 'l_test': '#6A1B9A', 'r_test': '#8E24AA', 'realclr2': '#BA68C8', 'realclr3': '#8E24AA', 'realclr': '#8E24AA', 'fake_hue': 'purple'}, {'ID': 21, 'clr1p1': '#8E24AA', 'clr2p1': '#4A148C', 'clr3p1': '#F3E5F5', 'clr4p1': '#BA68C8', 'clr1p2': '#5E35B1', 'clr2p2': '#000000', 'clr3p2': '#EDE7F6', 'clr4p2': '#9575CD', 'Hshow': 'purple', 'Htest': 'd_purple', 'stim_var': 'l_rand1', 'blank_clr': 'clr2', 'difficulty': 'high', 'answ': 'left', 'l_test': '#311B92', 'r_test': '#4527A0', 'realclr2': '#311B92', 'realclr3': '#EDE7F6', 'realclr': '#311B92', 'fake_hue': 'd_purple'}, {'ID': 22, 'clr1p1': '#039BE5', 'clr2p1': '#01579B', 'clr3p1': '#E1F5FE', 'clr4p1': '#4FC3F7', 'clr1p2': '#D81B60', 'clr2p2': '#000000', 'clr3p2': '#FCE4EC', 'clr4p2': '#F06292', 'Hshow': 'l_blue', 'Htest': 'pink', 'stim_var': 'l_rand1', 'blank_clr': 'clr2', 'difficulty': 'high', 'answ': 'left', 'l_test': '#880E4F', 'r_test': '#AD1457', 'realclr2': '#880E4F', 'realclr3': '#FCE4EC', 'realclr': '#880E4F', 'fake_hue': 'pink'}, {'ID': 24, 'clr1p1': '#FB8C00', 'clr2p1': '#E65100', 'clr3p1': '#FFF3E0', 'clr4p1': '#FFB74D', 'clr1p2': '#FDD835', 'clr2p2': '#000000', 'clr3p2': '#FFFDE7', 'clr4p2': '#FFF176', 'Hshow': 'orange', 'Htest': 'yellow', 'stim_var': 'l_rand1', 'blank_clr': 'clr2', 'difficulty': 'high', 'answ': 'left', 'l_test': '#F57F17', 'r_test': '#F9A825', 'realclr2': '#F57F17', 'realclr3': '#FFFDE7', 'realclr': '#F57F17', 'fake_hue': 'yellow'}, {'ID': 25, 'clr1p1': '#3949AB', 'clr2p1': '#1A237E', 'clr3p1': '#E8EAF6', 'clr4p1': '#7986CB', 'clr1p2': '#7CB342', 'clr2p2': '#000000', 'clr3p2': '#F1F8E9', 'clr4p2': '#AED581', 'Hshow': 'indigo', 'Htest': 'l_green', 'stim_var': 'l_rand1', 'blank_clr': 'clr2', 'difficulty': 'high', 'answ': 'left', 'l_test': '#33691E', 'r_test': '#558B2F', 'realclr2': '#33691E', 'realclr3': '#F1F8E9', 'realclr': '#33691E', 'fake_hue': 'l_green'}, {'ID': 26, 'clr1p1': '#E53935', 'clr2p1': '#B71C1C', 'clr3p1': '#FFEBEE', 'clr4p1': '#E57373', 'clr1p2': '#7CB342', 'clr2p2': '#000000', 'clr3p2': '#F1F8E9', 'clr4p2': '#AED581', 'Hshow': 'red', 'Htest': 'l_green', 'stim_var': 'l_rand1', 'blank_clr': 'clr2', 'difficulty': 'low', 'answ': 'right', 'l_test': '#689F38', 'r_test': '#33691E', 'realclr2': '#33691E', 'realclr3': '#F1F8E9', 'realclr': '#33691E', 'fake_hue': 'l_green'}, {'ID': 27, 'clr1p1': '#3949AB', 'clr2p1': '#1A237E', 'clr3p1': '#E8EAF6', 'clr4p1': '#7986CB', 'clr1p2': '#FB8C00', 'clr2p2': '#000000', 'clr3p2': '#FFF3E0', 'clr4p2': '#FFB74D', 'Hshow': 'indigo', 'Htest': 'orange', 'stim_var': 'l_rand1', 'blank_clr': 'clr2', 'difficulty': 'low', 'answ': 'right', 'l_test': '#F57C00', 'r_test': '#E65100', 'realclr2': '#E65100', 'realclr3': '#FFF3E0', 'realclr': '#E65100', 'fake_hue': 'orange'}, {'ID': 29, 'clr1p1': '#FDD835', 'clr2p1': '#F57F17', 'clr3p1': '#FFFDE7', 'clr4p1': '#FFF176', 'clr1p2': '#F4511E', 'clr2p2': '#000000', 'clr3p2': '#FBE9E7', 'clr4p2': '#FF8A65', 'Hshow': 'yellow', 'Htest': 'd_orange', 'stim_var': 'l_rand1', 'blank_clr': 'clr2', 'difficulty': 'low', 'answ': 'left', 'l_test': '#BF360C', 'r_test': '#E64A19', 'realclr2': '#BF360C', 'realclr3': '#FBE9E7', 'realclr': '#BF360C', 'fake_hue': 'd_orange'}, {'ID': 30, 'clr1p1': '#6D4C41', 'clr2p1': '#3E2723', 'clr3p1': '#EFEBE9', 'clr4p1': '#A1887F', 'clr1p2': '#00ACC1', 'clr2p2': '#000000', 'clr3p2': '#E0F7FA', 'clr4p2': '#4DD0E1', 'Hshow': 'brown', 'Htest': 'cyan', 'stim_var': 'l_rand1', 'blank_clr': 'clr2', 'difficulty': 'low', 'answ': 'right', 'l_test': '#0097A7', 'r_test': '#006064', 'realclr2': '#006064', 'realclr3': '#E0F7FA', 'realclr': '#006064', 'fake_hue': 'cyan'}, {'ID': 32, 'clr1p1': '#D81B60', 'clr2p1': '#880E4F', 'clr3p1': '#FCE4EC', 'clr4p1': '#F06292', 'clr1p2': '#FDD835', 'clr2p2': '#F57F17', 'clr3p2': '#000000', 'clr4p2': '#FFF176', 'Hshow': 'pink', 'Htest': 'yellow', 'stim_var': 'l_rand1', 'blank_clr': 'clr3', 'difficulty': 'high', 'answ': 'right', 'l_test': '#FFF9C4', 'r_test': '#FFFDE7', 'realclr2': '#F57F17', 'realclr3': '#FFFDE7', 'realclr': '#FFFDE7', 'fake_hue': 'yellow'}, {'ID': 33, 'clr1p1': '#1E88E5', 'clr2p1': '#0D47A1', 'clr3p1': '#E3F2FD', 'clr4p1': '#64B5F6', 'clr1p2': '#C0CA33', 'clr2p2': '#827717', 'clr3p2': '#000000', 'clr4p2': '#DCE775', 'Hshow': 'blue', 'Htest': 'lime', 'stim_var': 'l_rand1', 'blank_clr': 'clr3', 'difficulty': 'high', 'answ': 'right', 'l_test': '#F0F4C3', 'r_test': '#F9FBE7', 'realclr2': '#827717', 'realclr3': '#F9FBE7', 'realclr': '#F9FBE7', 'fake_hue': 'lime'}, {'ID': 34, 'clr1p1': '#43A047', 'clr2p1': '#1B5E20', 'clr3p1': '#E8F5E9', 'clr4p1': '#81C784', 'clr1p2': '#00897B', 'clr2p2': '#004D40', 'clr3p2': '#000000', 'clr4p2': '#4DB6AC', 'Hshow': 'green', 'Htest': 'teal', 'stim_var': 'l_rand1', 'blank_clr': 'clr3', 'difficulty': 'high', 'answ': 'right', 'l_test': '#B2DFDB', 'r_test': '#E0F2F1', 'realclr2': '#004D40', 'realclr3': '#E0F2F1', 'realclr': '#E0F2F1', 'fake_hue': 'teal'}, {'ID': 35, 'clr1p1': '#FFB300', 'clr2p1': '#FF6F00', 'clr3p1': '#FFF8E1', 'clr4p1': '#FFD54F', 'clr1p2': '#039BE5', 'clr2p2': '#01579B', 'clr3p2': '#000000', 'clr4p2': '#4FC3F7', 'Hshow': 'amber', 'Htest': 'l_blue', 'stim_var': 'l_rand1', 'blank_clr': 'clr3', 'difficulty': 'high', 'answ': 'right', 'l_test': '#B3E5FC', 'r_test': '#E1F5FE', 'realclr2': '#01579B', 'realclr3': '#E1F5FE', 'realclr': '#E1F5FE', 'fake_hue': 'l_blue'}, {'ID': 36, 'clr1p1': '#5E35B1', 'clr2p1': '#311B92', 'clr3p1': '#EDE7F6', 'clr4p1': '#9575CD', 'clr1p2': '#6D4C41', 'clr2p2': '#3E2723', 'clr3p2': '#000000', 'clr4p2': '#A1887F', 'Hshow': 'd_purple', 'Htest': 'brown', 'stim_var': 'l_rand1', 'blank_clr': 'clr3', 'difficulty': 'low', 'answ': 'left', 'l_test': '#EFEBE9', 'r_test': '#BCAAA4', 'realclr2': '#3E2723', 'realclr3': '#EFEBE9', 'realclr': '#EFEBE9', 'fake_hue': 'brown'}, {'ID': 38, 'clr1p1': '#00897B', 'clr2p1': '#004D40', 'clr3p1': '#E0F2F1', 'clr4p1': '#4DB6AC', 'clr1p2': '#3949AB', 'clr2p2': '#1A237E', 'clr3p2': '#000000', 'clr4p2': '#7986CB', 'Hshow': 'lime', 'Htest': 'indigo', 'stim_var': 'l_rand1', 'blank_clr': 'clr3', 'difficulty': 'low', 'answ': 'left', 'l_test': '#E8EAF6', 'r_test': '#9FA8DA', 'realclr2': '#1A237E', 'realclr3': '#E8EAF6', 'realclr': '#E8EAF6', 'fake_hue': 'indigo'}, {'ID': 39, 'clr1p1': '#F4511E', 'clr2p1': '#BF360C', 'clr3p1': '#FBE9E7', 'clr4p1': '#FF8A65', 'clr1p2': '#43A047', 'clr2p2': '#1B5E20', 'clr3p2': '#000000', 'clr4p2': '#81C784', 'Hshow': 'd_orange', 'Htest': 'green', 'stim_var': 'l_rand1', 'blank_clr': 'clr3', 'difficulty': 'low', 'answ': 'left', 'l_test': '#E8F5E9', 'r_test': '#A5D6A7', 'realclr2': '#1B5E20', 'realclr3': '#E8F5E9', 'realclr': '#E8F5E9', 'fake_hue': 'green'}, {'ID': 40, 'clr1p1': '#43A047', 'clr2p1': '#1B5E20', 'clr3p1': '#E8F5E9', 'clr4p1': '#81C784', 'clr1p2': '#00ACC1', 'clr2p2': '#006064', 'clr3p2': '#000000', 'clr4p2': '#4DD0E1', 'Hshow': 'green', 'Htest': 'cyan', 'stim_var': 'l_rand1', 'blank_clr': 'clr3', 'difficulty': 'low', 'answ': 'left', 'l_test': '#E0F7FA', 'r_test': '#80DEEA', 'realclr2': '#006064', 'realclr3': '#E0F7FA', 'realclr': '#E0F7FA', 'fake_hue': 'cyan'}, {'ID': 41, 'clr1p1': '#880E4F', 'clr2p1': '#FCE4EC', 'clr3p1': '#D81B60', 'clr4p1': '#F06292', 'clr1p2': '#33691E', 'clr2p2': '#000000', 'clr3p2': '#7CB342', 'clr4p2': '#AED581', 'Hshow': 'pink', 'Htest': 'l_green', 'stim_var': 'l_rand2', 'blank_clr': 'clr2', 'difficulty': 'high', 'answ': 'left', 'l_test': '#F1F8E9', 'r_test': '#DCEDC8', 'realclr2': '#F1F8E9', 'realclr3': '#7CB342', 'realclr': '#F1F8E9', 'fake_hue': 'l_green'}, {'ID': 43, 'clr1p1': '#1B5E20', 'clr2p1': '#E8F5E9', 'clr3p1': '#43A047', 'clr4p1': '#81C784', 'clr1p2': '#006064', 'clr2p2': '#000000', 'clr3p2': '#00ACC1', 'clr4p2': '#4DD0E1', 'Hshow': 'green', 'Htest': 'cyan', 'stim_var': 'l_rand2', 'blank_clr': 'clr2', 'difficulty': 'high', 'answ': 'left', 'l_test': '#E0F7FA', 'r_test': '#B2EBF2', 'realclr2': '#E0F7FA', 'realclr3': '#00ACC1', 'realclr': '#E0F7FA', 'fake_hue': 'cyan'}, {'ID': 44, 'clr1p1': '#FF6F00', 'clr2p1': '#FFF8E1', 'clr3p1': '#FFB300', 'clr4p1': '#FFD54F', 'clr1p2': '#880E4F', 'clr2p2': '#000000', 'clr3p2': '#D81B60', 'clr4p2': '#F06292', 'Hshow': 'amber', 'Htest': 'pink', 'stim_var': 'l_rand2', 'blank_clr': 'clr2', 'difficulty': 'high', 'answ': 'left', 'l_test': '#FCE4EC', 'r_test': '#F8BBD0', 'realclr2': '#FCE4EC', 'realclr3': '#D81B60', 'realclr': '#FCE4EC', 'fake_hue': 'pink'}, {'ID': 45, 'clr1p1': '#FF6F00', 'clr2p1': '#FFF8E1', 'clr3p1': '#FFB300', 'clr4p1': '#FFD54F', 'clr1p2': '#4A148C', 'clr2p2': '#000000', 'clr3p2': '#8E24AA', 'clr4p2': '#BA68C8', 'Hshow': 'amber', 'Htest': 'purple', 'stim_var': 'l_rand2', 'blank_clr': 'clr2', 'difficulty': 'high', 'answ': 'right', 'l_test': '#E1BEE7', 'r_test': '#F3E5F5', 'realclr2': '#F3E5F5', 'realclr3': '#8E24AA', 'realclr': '#F3E5F5', 'fake_hue': 'purple'}, {'ID': 46, 'clr1p1': '#311B92', 'clr2p1': '#EDE7F6', 'clr3p1': '#5E35B1', 'clr4p1': '#9575CD', 'clr1p2': '#B71C1C', 'clr2p2': '#000000', 'clr3p2': '#E53935', 'clr4p2': '#E57373', 'Hshow': 'd_purple', 'Htest': 'red', 'stim_var': 'l_rand2', 'blank_clr': 'clr2', 'difficulty': 'low', 'answ': 'right', 'l_test': '#EF9A9A', 'r_test': '#FFEBEE', 'realclr2': '#FFEBEE', 'realclr3': '#E53935', 'realclr': '#FFEBEE', 'fake_hue': 'red'}, {'ID': 48, 'clr1p1': '#004D40', 'clr2p1': '#E0F2F1', 'clr3p1': '#00897B', 'clr4p1': '#4DB6AC', 'clr1p2': '#E65100', 'clr2p2': '#000000', 'clr3p2': '#FB8C00', 'clr4p2': '#FFB74D', 'Hshow': 'lime', 'Htest': 'orange', 'stim_var': 'l_rand2', 'blank_clr': 'clr2', 'difficulty': 'low', 'answ': 'right', 'l_test': '#FFCC80', 'r_test': '#FFF3E0', 'realclr2': '#FFF3E0', 'realclr3': '#FB8C00', 'realclr': '#FFF3E0', 'fake_hue': 'orange'}, {'ID': 49, 'clr1p1': '#BF360C', 'clr2p1': '#FBE9E7', 'clr3p1': '#F4511E', 'clr4p1': '#FF8A65', 'clr1p2': '#B71C1C', 'clr2p2': '#000000', 'clr3p2': '#E53935', 'clr4p2': '#E57373', 'Hshow': 'd_orange', 'Htest': 'red', 'stim_var': 'l_rand2', 'blank_clr': 'clr2', 'difficulty': 'low', 'answ': 'right', 'l_test': '#EF9A9A', 'r_test': '#FFEBEE', 'realclr2': '#FFEBEE', 'realclr3': '#E53935', 'realclr': '#FFEBEE', 'fake_hue': 'red'}, {'ID': 50, 'clr1p1': '#B71C1C', 'clr2p1': '#FFEBEE', 'clr3p1': '#E53935', 'clr4p1': '#E57373', 'clr1p2': '#E65100', 'clr2p2': '#000000', 'clr3p2': '#FB8C00', 'clr4p2': '#FFB74D', 'Hshow': 'red', 'Htest': 'orange', 'stim_var': 'l_rand2', 'blank_clr': 'clr2', 'difficulty': 'low', 'answ': 'right', 'l_test': '#FFCC80', 'r_test': '#FFF3E0', 'realclr2': '#FFF3E0', 'realclr3': '#FB8C00', 'realclr': '#FFF3E0', 'fake_hue': 'orange'}, {'ID': 52, 'clr1p1': '#1A237E', 'clr2p1': '#E8EAF6', 'clr3p1': '#3949AB', 'clr4p1': '#7986CB', 'clr1p2': '#01579B', 'clr2p2': '#E1F5FE', 'clr3p2': '#000000', 'clr4p2': '#4FC3F7', 'Hshow': 'indigo', 'Htest': 'l_blue', 'stim_var': 'l_rand2', 'blank_clr': 'clr3', 'difficulty': 'high', 'answ': 'right', 'l_test': '#03A9F4', 'r_test': '#039BE5', 'realclr2': '#E1F5FE', 'realclr3': '#039BE5', 'realclr': '#039BE5', 'fake_hue': 'l_blue'}, {'ID': 53, 'clr1p1': '#004D40', 'clr2p1': '#E0F2F1', 'clr3p1': '#00897B', 'clr4p1': '#4DB6AC', 'clr1p2': '#3E2723', 'clr2p2': '#EFEBE9', 'clr3p2': '#000000', 'clr4p2': '#A1887F', 'Hshow': 'teal', 'Htest': 'brown', 'stim_var': 'l_rand2', 'blank_clr': 'clr3', 'difficulty': 'high', 'answ': 'right', 'l_test': '#5D4037', 'r_test': '#6D4C41', 'realclr2': '#EFEBE9', 'realclr3': '#6D4C41', 'realclr': '#6D4C41', 'fake_hue': 'brown'}, {'ID': 54, 'clr1p1': '#F57F17', 'clr2p1': '#FFFDE7', 'clr3p1': '#FDD835', 'clr4p1': '#FFF176', 'clr1p2': '#BF360C', 'clr2p2': '#FBE9E7', 'clr3p2': '#000000', 'clr4p2': '#FF8A65', 'Hshow': 'yellow', 'Htest': 'd_orange', 'stim_var': 'l_rand2', 'blank_clr': 'clr3', 'difficulty': 'high', 'answ': 'right', 'l_test': '#FF5722', 'r_test': '#F4511E', 'realclr2': '#FBE9E7', 'realclr3': '#F4511E', 'realclr': '#F4511E', 'fake_hue': 'd_orange'}, {'ID': 55, 'clr1p1': '#3E2723', 'clr2p1': '#EFEBE9', 'clr3p1': '#6D4C41', 'clr4p1': '#A1887F', 'clr1p2': '#0D47A1', 'clr2p2': '#E3F2FD', 'clr3p2': '#000000', 'clr4p2': '#64B5F6', 'Hshow': 'brown', 'Htest': 'blue', 'stim_var': 'l_rand2', 'blank_clr': 'clr3', 'difficulty': 'high', 'answ': 'right', 'l_test': '#2196F3', 'r_test': '#1E88E5', 'realclr2': '#E3F2FD', 'realclr3': '#1E88E5', 'realclr': '#1E88E5', 'fake_hue': 'blue'}, {'ID': 56, 'clr1p1': '#4A148C', 'clr2p1': '#F3E5F5', 'clr3p1': '#8E24AA', 'clr4p1': '#BA68C8', 'clr1p2': '#827717', 'clr2p2': '#F9FBE7', 'clr3p2': '#000000', 'clr4p2': '#DCE775', 'Hshow': 'purple', 'Htest': 'lime', 'stim_var': 'l_rand2', 'blank_clr': 'clr3', 'difficulty': 'low', 'answ': 'left', 'l_test': '#C0CA33', 'r_test': '#D4E157', 'realclr2': '#F9FBE7', 'realclr3': '#C0CA33', 'realclr': '#C0CA33', 'fake_hue': 'lime'}, {'ID': 58, 'clr1p1': '#33691E', 'clr2p1': '#F1F8E9', 'clr3p1': '#7CB342', 'clr4p1': '#AED581', 'clr1p2': '#0D47A1', 'clr2p2': '#E3F2FD', 'clr3p2': '#000000', 'clr4p2': '#64B5F6', 'Hshow': 'l_green', 'Htest': 'blue', 'stim_var': 'l_rand2', 'blank_clr': 'clr3', 'difficulty': 'low', 'answ': 'left', 'l_test': '#1E88E5', 'r_test': '#42A5F5', 'realclr2': '#E3F2FD', 'realclr3': '#1E88E5', 'realclr': '#1E88E5', 'fake_hue': 'blue'}, {'ID': 59, 'clr1p1': '#E65100', 'clr2p1': '#FFF3E0', 'clr3p1': '#FB8C00', 'clr4p1': '#FFB74D', 'clr1p2': '#004D40', 'clr2p2': '#E0F2F1', 'clr3p2': '#000000', 'clr4p2': '#4DB6AC', 'Hshow': 'orange', 'Htest': 'teal', 'stim_var': 'l_rand2', 'blank_clr': 'clr3', 'difficulty': 'low', 'answ': 'left', 'l_test': '#00897B', 'r_test': '#00695C', 'realclr2': '#E0F2F1', 'realclr3': '#00897B', 'realclr': '#00897B', 'fake_hue': 'teal'}, {'ID': 60, 'clr1p1': '#004D40', 'clr2p1': '#E0F2F1', 'clr3p1': '#00897B', 'clr4p1': '#4DB6AC', 'clr1p2': '#BF360C', 'clr2p2': '#FBE9E7', 'clr3p2': '#000000', 'clr4p2': '#FF8A65', 'Hshow': 'teal', 'Htest': 'd_orange', 'stim_var': 'l_rand2', 'blank_clr': 'clr3', 'difficulty': 'low', 'answ': 'right', 'l_test': '#D84315', 'r_test': '#F4511E', 'realclr2': '#FBE9E7', 'realclr3': '#F4511E', 'realclr': '#F4511E', 'fake_hue': 'd_orange'}, {'ID': 61, 'clr1p1': '#4A148C', 'clr2p1': '#8E24AA', 'clr3p1': '#BA68C8', 'clr4p1': '#F3E5F5', 'clr1p2': '#0D47A1', 'clr2p2': '#000000', 'clr3p2': '#64B5F6', 'clr4p2': '#E3F2FD', 'Hshow': 'purple', 'Htest': 'blue', 'stim_var': 'l_up', 'blank_clr': 'clr2', 'difficulty': 'high', 'answ': 'left', 'l_test': '#1E88E5', 'r_test': '#2196F3', 'realclr2': '#1E88E5', 'realclr3': '#64B5F6', 'realclr': '#1E88E5', 'fake_hue': 'blue'}, {'ID': 62, 'clr1p1': '#33691E', 'clr2p1': '#7CB342', 'clr3p1': '#AED581', 'clr4p1': '#F1F8E9', 'clr1p2': '#880E4F', 'clr2p2': '#000000', 'clr3p2': '#F06292', 'clr4p2': '#FCE4EC', 'Hshow': 'l_green', 'Htest': 'pink', 'stim_var': 'l_up', 'blank_clr': 'clr2', 'difficulty': 'high', 'answ': 'left', 'l_test': '#D81B60', 'r_test': '#E91E63', 'realclr2': '#D81B60', 'realclr3': '#F06292', 'realclr': '#D81B60', 'fake_hue': 'pink'}, {'ID': 64, 'clr1p1': '#827717', 'clr2p1': '#C0CA33', 'clr3p1': '#DCE775', 'clr4p1': '#F9FBE7', 'clr1p2': '#004D40', 'clr2p2': '#000000', 'clr3p2': '#4DB6AC', 'clr4p2': '#E0F2F1', 'Hshow': 'lime', 'Htest': 'teal', 'stim_var': 'l_up', 'blank_clr': 'clr2', 'difficulty': 'high', 'answ': 'right', 'l_test': '#009688', 'r_test': '#00897B', 'realclr2': '#00897B', 'realclr3': '#4DB6AC', 'realclr': '#00897B', 'fake_hue': 'teal'}, {'ID': 65, 'clr1p1': '#311B92', 'clr2p1': '#5E35B1', 'clr3p1': '#9575CD', 'clr4p1': '#EDE7F6', 'clr1p2': '#880E4F', 'clr2p2': '#000000', 'clr3p2': '#F06292', 'clr4p2': '#FCE4EC', 'Hshow': 'd_purple', 'Htest': 'pink', 'stim_var': 'l_up', 'blank_clr': 'clr2', 'difficulty': 'high', 'answ': 'right', 'l_test': '#E91E63', 'r_test': '#D81B60', 'realclr2': '#D81B60', 'realclr3': '#F06292', 'realclr': '#D81B60', 'fake_hue': 'pink'}, {'ID': 66, 'clr1p1': '#1B5E20', 'clr2p1': '#43A047', 'clr3p1': '#81C784', 'clr4p1': '#E8F5E9', 'clr1p2': '#004D40', 'clr2p2': '#000000', 'clr3p2': '#4DB6AC', 'clr4p2': '#E0F2F1', 'Hshow': 'green', 'Htest': 'lime', 'stim_var': 'l_up', 'blank_clr': 'clr2', 'difficulty': 'high', 'answ': 'right', 'l_test': '#00796B', 'r_test': '#00897B', 'realclr2': '#00897B', 'realclr3': '#4DB6AC', 'realclr': '#00897B', 'fake_hue': 'lime'}, {'ID': 68, 'clr1p1': '#004D40', 'clr2p1': '#00897B', 'clr3p1': '#4DB6AC', 'clr4p1': '#E0F2F1', 'clr1p2': '#3E2723', 'clr2p2': '#000000', 'clr3p2': '#A1887F', 'clr4p2': '#EFEBE9', 'Hshow': 'teal', 'Htest': 'brown', 'stim_var': 'l_up', 'blank_clr': 'clr2', 'difficulty': 'low', 'answ': 'left', 'l_test': '#6D4C41', 'r_test': '#4E342E', 'realclr2': '#6D4C41', 'realclr3': '#A1887F', 'realclr': '#6D4C41', 'fake_hue': 'brown'}, {'ID': 69, 'clr1p1': '#880E4F', 'clr2p1': '#D81B60', 'clr3p1': '#F06292', 'clr4p1': '#FCE4EC', 'clr1p2': '#B71C1C', 'clr2p2': '#000000', 'clr3p2': '#E57373', 'clr4p2': '#FFEBEE', 'Hshow': 'pink', 'Htest': 'red', 'stim_var': 'l_up', 'blank_clr': 'clr2', 'difficulty': 'low', 'answ': 'right', 'l_test': '#EF5350', 'r_test': '#E53935', 'realclr2': '#E53935', 'realclr3': '#E57373', 'realclr': '#E53935', 'fake_hue': 'red'}, {'ID': 70, 'clr1p1': '#1B5E20', 'clr2p1': '#43A047', 'clr3p1': '#81C784', 'clr4p1': '#E8F5E9', 'clr1p2': '#4A148C', 'clr2p2': '#000000', 'clr3p2': '#BA68C8', 'clr4p2': '#F3E5F5', 'Hshow': 'green', 'Htest': 'purple', 'stim_var': 'l_up', 'blank_clr': 'clr2', 'difficulty': 'low', 'answ': 'right', 'l_test': '#6A1B9A', 'r_test': '#8E24AA', 'realclr2': '#8E24AA', 'realclr3': '#BA68C8', 'realclr': '#8E24AA', 'fake_hue': 'purple'}, {'ID': 72, 'clr1p1': '#E65100', 'clr2p1': '#FB8C00', 'clr3p1': '#FFB74D', 'clr4p1': '#FFF3E0', 'clr1p2': '#0D47A1', 'clr2p2': '#1E88E5', 'clr3p2': '#000000', 'clr4p2': '#E3F2FD', 'Hshow': 'orange', 'Htest': 'blue', 'stim_var': 'l_up', 'blank_clr': 'clr3', 'difficulty': 'high', 'answ': 'left', 'l_test': '#64B5F6', 'r_test': '#42A5F5', 'realclr2': '#1E88E5', 'realclr3': '#64B5F6', 'realclr': '#64B5F6', 'fake_hue': 'blue'}, {'ID': 73, 'clr1p1': '#006064', 'clr2p1': '#00ACC1', 'clr3p1': '#4DD0E1', 'clr4p1': '#E0F7FA', 'clr1p2': '#01579B', 'clr2p2': '#039BE5', 'clr3p2': '#000000', 'clr4p2': '#E1F5FE', 'Hshow': 'cyan', 'Htest': 'l_blue', 'stim_var': 'l_up', 'blank_clr': 'clr3', 'difficulty': 'high', 'answ': 'right', 'l_test': '#81D4FA', 'r_test': '#4FC3F7', 'realclr2': '#039BE5', 'realclr3': '#4FC3F7', 'realclr': '#4FC3F7', 'fake_hue': 'l_blue'}, {'ID': 74, 'clr1p1': '#BF360C', 'clr2p1': '#F4511E', 'clr3p1': '#FF8A65', 'clr4p1': '#FBE9E7', 'clr1p2': '#33691E', 'clr2p2': '#7CB342', 'clr3p2': '#000000', 'clr4p2': '#F1F8E9', 'Hshow': 'd_orange', 'Htest': 'l_green', 'stim_var': 'l_up', 'blank_clr': 'clr3', 'difficulty': 'high', 'answ': 'right', 'l_test': '#C5E1A5', 'r_test': '#AED581', 'realclr2': '#7CB342', 'realclr3': '#AED581', 'realclr': '#AED581', 'fake_hue': 'l_green'}, {'ID': 75, 'clr1p1': '#1A237E', 'clr2p1': '#3949AB', 'clr3p1': '#7986CB', 'clr4p1': '#E8EAF6', 'clr1p2': '#311B92', 'clr2p2': '#5E35B1', 'clr3p2': '#000000', 'clr4p2': '#EDE7F6', 'Hshow': 'indigo', 'Htest': 'd_purple', 'stim_var': 'l_up', 'blank_clr': 'clr3', 'difficulty': 'low', 'answ': 'left', 'l_test': '#9575CD', 'r_test': '#673AB7', 'realclr2': '#5E35B1', 'realclr3': '#9575CD', 'realclr': '#9575CD', 'fake_hue': 'd_purple'}, {'ID': 76, 'clr1p1': '#F57F17', 'clr2p1': '#FDD835', 'clr3p1': '#FFF176', 'clr4p1': '#FFFDE7', 'clr1p2': '#33691E', 'clr2p2': '#7CB342', 'clr3p2': '#000000', 'clr4p2': '#F1F8E9', 'Hshow': 'yellow', 'Htest': 'l_green', 'stim_var': 'l_up', 'blank_clr': 'clr3', 'difficulty': 'low', 'answ': 'left', 'l_test': '#AED581', 'r_test': '#DCEDC8', 'realclr2': '#7CB342', 'realclr3': '#AED581', 'realclr': '#AED581', 'fake_hue': 'l_green'}, {'ID': 77, 'clr1p1': '#3E2723', 'clr2p1': '#6D4C41', 'clr3p1': '#A1887F', 'clr4p1': '#EFEBE9', 'clr1p2': '#006064', 'clr2p2': '#00ACC1', 'clr3p2': '#000000', 'clr4p2': '#E0F7FA', 'Hshow': 'brown', 'Htest': 'cyan', 'stim_var': 'l_up', 'blank_clr': 'clr3', 'difficulty': 'low', 'answ': 'left', 'l_test': '#4DD0E1', 'r_test': '#B2EBF2', 'realclr2': '#00ACC1', 'realclr3': '#4DD0E1', 'realclr': '#4DD0E1', 'fake_hue': 'cyan'}, {'ID': 79, 'clr1p1': '#FF6F00', 'clr2p1': '#FFB300', 'clr3p1': '#FFD54F', 'clr4p1': '#FFF8E1', 'clr1p2': '#1A237E', 'clr2p2': '#3949AB', 'clr3p2': '#000000', 'clr4p2': '#E8EAF6', 'Hshow': 'amber', 'Htest': 'indigo', 'stim_var': 'l_up', 'blank_clr': 'clr3', 'difficulty': 'low', 'answ': 'right', 'l_test': '#C5CAE9', 'r_test': '#7986CB', 'realclr2': '#3949AB', 'realclr3': '#7986CB', 'realclr': '#7986CB', 'fake_hue': 'indigo'}, {'ID': 80, 'clr1p1': '#E65100', 'clr2p1': '#FB8C00', 'clr3p1': '#FFB74D', 'clr4p1': '#FFF3E0', 'clr1p2': '#1A237E', 'clr2p2': '#3949AB', 'clr3p2': '#000000', 'clr4p2': '#E8EAF6', 'Hshow': 'orange', 'Htest': 'indigo', 'stim_var': 'l_up', 'blank_clr': 'clr3', 'difficulty': 'low', 'answ': 'right', 'l_test': '#7986CB', 'r_test': '#3F51B5', 'realclr2': '#3949AB', 'realclr3': '#7986CB', 'realclr': '#7986CB', 'fake_hue': 'indigo'}, {'ID': 81, 'clr1p1': '#FFEBEE', 'clr2p1': '#E57373', 'clr3p1': '#E53935', 'clr4p1': '#B71C1C', 'clr1p2': '#E1F5FE', 'clr2p2': '#000000', 'clr3p2': '#039BE5', 'clr4p2': '#01579B', 'Hshow': 'red', 'Htest': 'l_blue', 'stim_var': 'l_down', 'blank_clr': 'clr2', 'difficulty': 'none', 'answ': 'left', 'l_test': '#4FC3F7', 'r_test': '#7986CB', 'realclr2': '#4FC3F7', 'realclr3': '#039BE5', 'realclr': '#4FC3F7', 'fake_hue': 'indigo'}, {'ID': 83, 'clr1p1': '#EFEBE9', 'clr2p1': '#A1887F', 'clr3p1': '#6D4C41', 'clr4p1': '#3E2723', 'clr1p2': '#E8F5E9', 'clr2p2': '#000000', 'clr3p2': '#43A047', 'clr4p2': '#1B5E20', 'Hshow': 'brown', 'Htest': 'green', 'stim_var': 'l_down', 'blank_clr': 'clr2', 'difficulty': 'none', 'answ': 'left', 'l_test': '#81C784', 'r_test': '#4DD0E1', 'realclr2': '#81C784', 'realclr3': '#43A047', 'realclr': '#81C784', 'fake_hue': 'cyan'}, {'ID': 84, 'clr1p1': '#FFEBEE', 'clr2p1': '#E57373', 'clr3p1': '#E53935', 'clr4p1': '#B71C1C', 'clr1p2': '#FFFDE7', 'clr2p2': '#000000', 'clr3p2': '#FDD835', 'clr4p2': '#F57F17', 'Hshow': 'red', 'Htest': 'yellow', 'stim_var': 'l_down', 'blank_clr': 'clr2', 'difficulty': 'none', 'answ': 'left', 'l_test': '#FFF176', 'r_test': '#AED581', 'realclr2': '#FFF176', 'realclr3': '#FDD835', 'realclr': '#FFF176', 'fake_hue': 'l_green'}, {'ID': 85, 'clr1p1': '#FCE4EC', 'clr2p1': '#F06292', 'clr3p1': '#D81B60', 'clr4p1': '#880E4F', 'clr1p2': '#FBE9E7', 'clr2p2': '#000000', 'clr3p2': '#F4511E', 'clr4p2': '#BF360C', 'Hshow': 'pink', 'Htest': 'd_orange', 'stim_var': 'l_down', 'blank_clr': 'clr2', 'difficulty': 'none', 'answ': 'right', 'l_test': '#FFD54F', 'r_test': '#FF8A65', 'realclr2': '#FF8A65', 'realclr3': '#F4511E', 'realclr': '#FF8A65', 'fake_hue': 'amber'}, {'ID': 86, 'clr1p1': '#E8F5E9', 'clr2p1': '#81C784', 'clr3p1': '#43A047', 'clr4p1': '#1B5E20', 'clr1p2': '#FFEBEE', 'clr2p2': '#000000', 'clr3p2': '#E53935', 'clr4p2': '#B71C1C', 'Hshow': 'green', 'Htest': 'red', 'stim_var': 'l_down', 'blank_clr': 'clr2', 'difficulty': 'none', 'answ': 'right', 'l_test': '#FFB74D', 'r_test': '#E57373', 'realclr2': '#E57373', 'realclr3': '#E53935', 'realclr': '#E57373', 'fake_hue': 'orange'}, {'ID': 87, 'clr1p1': '#E8EAF6', 'clr2p1': '#7986CB', 'clr3p1': '#3949AB', 'clr4p1': '#1A237E', 'clr1p2': '#FFF3E0', 'clr2p2': '#FFB74D', 'clr3p2': '#000000', 'clr4p2': '#E65100', 'Hshow': 'indigo', 'Htest': 'orange', 'stim_var': 'l_down', 'blank_clr': 'clr3', 'difficulty': 'none', 'answ': 'left', 'l_test': '#FB8C00', 'r_test': '#E53935', 'realclr2': '#FFB74D', 'realclr3': '#FB8C00', 'realclr': '#FB8C00', 'fake_hue': 'red'}, {'ID': 88, 'clr1p1': '#FFFDE7', 'clr2p1': '#FFF176', 'clr3p1': '#FDD835', 'clr4p1': '#F57F17', 'clr1p2': '#E0F7FA', 'clr2p2': '#4DD0E1', 'clr3p2': '#000000', 'clr4p2': '#006064', 'Hshow': 'yellow', 'Htest': 'cyan', 'stim_var': 'l_down', 'blank_clr': 'clr3', 'difficulty': 'none', 'answ': 'left', 'l_test': '#00ACC1', 'r_test': '#1E88E5', 'realclr2': '#4DD0E1', 'realclr3': '#00ACC1', 'realclr': '#00ACC1', 'fake_hue': 'blue'}, {'ID': 90, 'clr1p1': '#FFF8E1', 'clr2p1': '#FFD54F', 'clr3p1': '#FFB300', 'clr4p1': '#FF6F00', 'clr1p2': '#E8EAF6', 'clr2p2': '#7986CB', 'clr3p2': '#000000', 'clr4p2': '#1A237E', 'Hshow': 'amber', 'Htest': 'indigo', 'stim_var': 'l_down', 'blank_clr': 'clr3', 'difficulty': 'none', 'answ': 'right', 'l_test': '#039BE5', 'r_test': '#3949AB', 'realclr2': '#7986CB', 'realclr3': '#3949AB', 'realclr': '#3949AB', 'fake_hue': 'l_blue'}, {'ID': 91, 'clr1p1': '#8E24AA', 'clr2p1': '#4A148C', 'clr3p1': '#F3E5F5', 'clr4p1': '#BA68C8', 'clr1p2': '#5E35B1', 'clr2p2': '#000000', 'clr3p2': '#EDE7F6', 'clr4p2': '#9575CD', 'Hshow': 'purple', 'Htest': 'd_purple', 'stim_var': 'l_rand1', 'blank_clr': 'clr2', 'difficulty': 'none', 'answ': 'left', 'l_test': '#311B92', 'r_test': '#880E4F', 'realclr2': '#311B92', 'realclr3': '#EDE7F6', 'realclr': '#311B92', 'fake_hue': 'pink'}, {'ID': 93, 'clr1p1': '#7CB342', 'clr2p1': '#33691E', 'clr3p1': '#F1F8E9', 'clr4p1': '#AED581', 'clr1p2': '#8E24AA', 'clr2p2': '#000000', 'clr3p2': '#F3E5F5', 'clr4p2': '#BA68C8', 'Hshow': 'l_green', 'Htest': 'purple', 'stim_var': 'l_rand1', 'blank_clr': 'clr2', 'difficulty': 'none', 'answ': 'left', 'l_test': '#4A148C', 'r_test': '#B71C1C', 'realclr2': '#4A148C', 'realclr3': '#F3E5F5', 'realclr': '#4A148C', 'fake_hue': 'red'}, {'ID': 94, 'clr1p1': '#FB8C00', 'clr2p1': '#E65100', 'clr3p1': '#FFF3E0', 'clr4p1': '#FFB74D', 'clr1p2': '#FDD835', 'clr2p2': '#000000', 'clr3p2': '#FFFDE7', 'clr4p2': '#FFF176', 'Hshow': 'orange', 'Htest': 'yellow', 'stim_var': 'l_rand1', 'blank_clr': 'clr2', 'difficulty': 'none', 'answ': 'left', 'l_test': '#F57F17', 'r_test': '#33691E', 'realclr2': '#F57F17', 'realclr3': '#FFFDE7', 'realclr': '#F57F17', 'fake_hue': 'l_green'}, {'ID': 95, 'clr1p1': '#3949AB', 'clr2p1': '#1A237E', 'clr3p1': '#E8EAF6', 'clr4p1': '#7986CB', 'clr1p2': '#7CB342', 'clr2p2': '#000000', 'clr3p2': '#F1F8E9', 'clr4p2': '#AED581', 'Hshow': 'indigo', 'Htest': 'l_green', 'stim_var': 'l_rand1', 'blank_clr': 'clr2', 'difficulty': 'none', 'answ': 'left', 'l_test': '#33691E', 'r_test': '#004D40', 'realclr2': '#33691E', 'realclr3': '#F1F8E9', 'realclr': '#33691E', 'fake_hue': 'teal'}, {'ID': 96, 'clr1p1': '#FDD835', 'clr2p1': '#F57F17', 'clr3p1': '#FFFDE7', 'clr4p1': '#FFF176', 'clr1p2': '#FFB300', 'clr2p2': '#FF6F00', 'clr3p2': '#000000', 'clr4p2': '#FFD54F', 'Hshow': 'yellow', 'Htest': 'amber', 'stim_var': 'l_rand1', 'blank_clr': 'clr3', 'difficulty': 'none', 'answ': 'left', 'l_test': '#FFF8E1', 'r_test': '#F9FBE7', 'realclr2': '#FF6F00', 'realclr3': '#FFF8E1', 'realclr': '#FFF8E1', 'fake_hue': 'lime'}, {'ID': 97, 'clr1p1': '#D81B60', 'clr2p1': '#880E4F', 'clr3p1': '#FCE4EC', 'clr4p1': '#F06292', 'clr1p2': '#FDD835', 'clr2p2': '#F57F17', 'clr3p2': '#000000', 'clr4p2': '#FFF176', 'Hshow': 'pink', 'Htest': 'yellow', 'stim_var': 'l_rand1', 'blank_clr': 'clr3', 'difficulty': 'none', 'answ': 'right', 'l_test': '#FFF3E0', 'r_test': '#FFFDE7', 'realclr2': '#F57F17', 'realclr3': '#FFFDE7', 'realclr': '#FFFDE7', 'fake_hue': 'orange'}, {'ID': 99, 'clr1p1': '#43A047', 'clr2p1': '#1B5E20', 'clr3p1': '#E8F5E9', 'clr4p1': '#81C784', 'clr1p2': '#00897B', 'clr2p2': '#004D40', 'clr3p2': '#000000', 'clr4p2': '#4DB6AC', 'Hshow': 'green', 'Htest': 'teal', 'stim_var': 'l_rand1', 'blank_clr': 'clr3', 'difficulty': 'none', 'answ': 'right', 'l_test': '#E1F5FE', 'r_test': '#E0F2F1', 'realclr2': '#004D40', 'realclr3': '#E0F2F1', 'realclr': '#E0F2F1', 'fake_hue': 'l_blue'}, {'ID': 100, 'clr1p1': '#FFB300', 'clr2p1': '#FF6F00', 'clr3p1': '#FFF8E1', 'clr4p1': '#FFD54F', 'clr1p2': '#039BE5', 'clr2p2': '#01579B', 'clr3p2': '#000000', 'clr4p2': '#4FC3F7', 'Hshow': 'amber', 'Htest': 'l_blue', 'stim_var': 'l_rand1', 'blank_clr': 'clr3', 'difficulty': 'none', 'answ': 'right', 'l_test': '#E8EAF6', 'r_test': '#E1F5FE', 'realclr2': '#01579B', 'realclr3': '#E1F5FE', 'realclr': '#E1F5FE', 'fake_hue': 'indigo'}, {'ID': 101, 'clr1p1': '#880E4F', 'clr2p1': '#FCE4EC', 'clr3p1': '#D81B60', 'clr4p1': '#F06292', 'clr1p2': '#33691E', 'clr2p2': '#000000', 'clr3p2': '#7CB342', 'clr4p2': '#AED581', 'Hshow': 'pink', 'Htest': 'l_green', 'stim_var': 'l_rand2', 'blank_clr': 'clr2', 'difficulty': 'none', 'answ': 'left', 'l_test': '#F1F8E9', 'r_test': '#FFFDE7', 'realclr2': '#F1F8E9', 'realclr3': '#7CB342', 'realclr': '#F1F8E9', 'fake_hue': 'yellow'}, {'ID': 102, 'clr1p1': '#0D47A1', 'clr2p1': '#E3F2FD', 'clr3p1': '#1E88E5', 'clr4p1': '#64B5F6', 'clr1p2': '#4A148C', 'clr2p2': '#000000', 'clr3p2': '#8E24AA', 'clr4p2': '#BA68C8', 'Hshow': 'blue', 'Htest': 'purple', 'stim_var': 'l_rand2', 'blank_clr': 'clr2', 'difficulty': 'none', 'answ': 'left', 'l_test': '#F3E5F5', 'r_test': '#FFEBEE', 'realclr2': '#F3E5F5', 'realclr3': '#8E24AA', 'realclr': '#F3E5F5', 'fake_hue': 'red'}, {'ID': 103, 'clr1p1': '#1B5E20', 'clr2p1': '#E8F5E9', 'clr3p1': '#43A047', 'clr4p1': '#81C784', 'clr1p2': '#006064', 'clr2p2': '#000000', 'clr3p2': '#00ACC1', 'clr4p2': '#4DD0E1', 'Hshow': 'green', 'Htest': 'cyan', 'stim_var': 'l_rand2', 'blank_clr': 'clr2', 'difficulty': 'none', 'answ': 'left', 'l_test': '#E0F7FA', 'r_test': '#E8F5E9', 'realclr2': '#E0F7FA', 'realclr3': '#00ACC1', 'realclr': '#E0F7FA', 'fake_hue': 'green'}, {'ID': 104, 'clr1p1': '#FF6F00', 'clr2p1': '#FFF8E1', 'clr3p1': '#FFB300', 'clr4p1': '#FFD54F', 'clr1p2': '#880E4F', 'clr2p2': '#000000', 'clr3p2': '#D81B60', 'clr4p2': '#F06292', 'Hshow': 'amber', 'Htest': 'pink', 'stim_var': 'l_rand2', 'blank_clr': 'clr2', 'difficulty': 'none', 'answ': 'left', 'l_test': '#FCE4EC', 'r_test': '#EDE7F6', 'realclr2': '#FCE4EC', 'realclr3': '#D81B60', 'realclr': '#FCE4EC', 'fake_hue': 'd_purple'}, {'ID': 106, 'clr1p1': '#B71C1C', 'clr2p1': '#FFEBEE', 'clr3p1': '#E53935', 'clr4p1': '#E57373', 'clr1p2': '#1A237E', 'clr2p2': '#E8EAF6', 'clr3p2': '#000000', 'clr4p2': '#7986CB', 'Hshow': 'red', 'Htest': 'indigo', 'stim_var': 'l_rand2', 'blank_clr': 'clr3', 'difficulty': 'none', 'answ': 'right', 'l_test': '#8E24AA', 'r_test': '#3949AB', 'realclr2': '#E8EAF6', 'realclr3': '#3949AB', 'realclr': '#3949AB', 'fake_hue': 'purple'}, {'ID': 107, 'clr1p1': '#1A237E', 'clr2p1': '#E8EAF6', 'clr3p1': '#3949AB', 'clr4p1': '#7986CB', 'clr1p2': '#01579B', 'clr2p2': '#E1F5FE', 'clr3p2': '#000000', 'clr4p2': '#4FC3F7', 'Hshow': 'indigo', 'Htest': 'l_blue', 'stim_var': 'l_rand2', 'blank_clr': 'clr3', 'difficulty': 'none', 'answ': 'right', 'l_test': '#00897B', 'r_test': '#039BE5', 'realclr2': '#E1F5FE', 'realclr3': '#039BE5', 'realclr': '#039BE5', 'fake_hue': 'teal'}, {'ID': 109, 'clr1p1': '#F57F17', 'clr2p1': '#FFFDE7', 'clr3p1': '#FDD835', 'clr4p1': '#FFF176', 'clr1p2': '#BF360C', 'clr2p2': '#FBE9E7', 'clr3p2': '#000000', 'clr4p2': '#FF8A65', 'Hshow': 'yellow', 'Htest': 'd_orange', 'stim_var': 'l_rand2', 'blank_clr': 'clr3', 'difficulty': 'none', 'answ': 'right', 'l_test': '#D81B60', 'r_test': '#F4511E', 'realclr2': '#FBE9E7', 'realclr3': '#F4511E', 'realclr': '#F4511E', 'fake_hue': 'pink'}, {'ID': 110, 'clr1p1': '#3E2723', 'clr2p1': '#EFEBE9', 'clr3p1': '#6D4C41', 'clr4p1': '#A1887F', 'clr1p2': '#0D47A1', 'clr2p2': '#E3F2FD', 'clr3p2': '#000000', 'clr4p2': '#64B5F6', 'Hshow': 'brown', 'Htest': 'blue', 'stim_var': 'l_rand2', 'blank_clr': 'clr3', 'difficulty': 'none', 'answ': 'right', 'l_test': '#5E35B1', 'r_test': '#1E88E5', 'realclr2': '#E3F2FD', 'realclr3': '#1E88E5', 'realclr': '#1E88E5', 'fake_hue': 'd_purple'}, {'ID': 111, 'clr1p1': '#4A148C', 'clr2p1': '#8E24AA', 'clr3p1': '#BA68C8', 'clr4p1': '#F3E5F5', 'clr1p2': '#0D47A1', 'clr2p2': '#000000', 'clr3p2': '#64B5F6', 'clr4p2': '#E3F2FD', 'Hshow': 'purple', 'Htest': 'blue', 'stim_var': 'l_up', 'blank_clr': 'clr2', 'difficulty': 'none', 'answ': 'left', 'l_test': '#1E88E5', 'r_test': '#00ACC1', 'realclr2': '#1E88E5', 'realclr3': '#64B5F6', 'realclr': '#1E88E5', 'fake_hue': 'cyan'}, {'ID': 112, 'clr1p1': '#33691E', 'clr2p1': '#7CB342', 'clr3p1': '#AED581', 'clr4p1': '#F1F8E9', 'clr1p2': '#880E4F', 'clr2p2': '#000000', 'clr3p2': '#F06292', 'clr4p2': '#FCE4EC', 'Hshow': 'l_green', 'Htest': 'pink', 'stim_var': 'l_up', 'blank_clr': 'clr2', 'difficulty': 'none', 'answ': 'left', 'l_test': '#D81B60', 'r_test': '#5E35B1', 'realclr2': '#D81B60', 'realclr3': '#F06292', 'realclr': '#D81B60', 'fake_hue': 'd_purple'}, {'ID': 114, 'clr1p1': '#827717', 'clr2p1': '#C0CA33', 'clr3p1': '#DCE775', 'clr4p1': '#F9FBE7', 'clr1p2': '#004D40', 'clr2p2': '#000000', 'clr3p2': '#4DB6AC', 'clr4p2': '#E0F2F1', 'Hshow': 'lime', 'Htest': 'teal', 'stim_var': 'l_up', 'blank_clr': 'clr2', 'difficulty': 'none', 'answ': 'right', 'l_test': '#039BE5', 'r_test': '#00897B', 'realclr2': '#00897B', 'realclr3': '#4DB6AC', 'realclr': '#00897B', 'fake_hue': 'l_blue'}, {'ID': 115, 'clr1p1': '#311B92', 'clr2p1': '#5E35B1', 'clr3p1': '#9575CD', 'clr4p1': '#EDE7F6', 'clr1p2': '#880E4F', 'clr2p2': '#000000', 'clr3p2': '#F06292', 'clr4p2': '#FCE4EC', 'Hshow': 'd_purple', 'Htest': 'pink', 'stim_var': 'l_up', 'blank_clr': 'clr2', 'difficulty': 'none', 'answ': 'right', 'l_test': '#F4511E', 'r_test': '#D81B60', 'realclr2': '#D81B60', 'realclr3': '#F06292', 'realclr': '#D81B60', 'fake_hue': 'd_orange'}, {'ID': 116, 'clr1p1': '#1B5E20', 'clr2p1': '#43A047', 'clr3p1': '#81C784', 'clr4p1': '#E8F5E9', 'clr1p2': '#004D40', 'clr2p2': '#000000', 'clr3p2': '#4DB6AC', 'clr4p2': '#E0F2F1', 'Hshow': 'green', 'Htest': 'teal', 'stim_var': 'l_up', 'blank_clr': 'clr2', 'difficulty': 'none', 'answ': 'right', 'l_test': '#7CB342', 'r_test': '#00897B', 'realclr2': '#00897B', 'realclr3': '#4DB6AC', 'realclr': '#00897B', 'fake_hue': 'l_green'}, {'ID': 118, 'clr1p1': '#E65100', 'clr2p1': '#FB8C00', 'clr3p1': '#FFB74D', 'clr4p1': '#FFF3E0', 'clr1p2': '#0D47A1', 'clr2p2': '#1E88E5', 'clr3p2': '#000000', 'clr4p2': '#E3F2FD', 'Hshow': 'orange', 'Htest': 'blue', 'stim_var': 'l_up', 'blank_clr': 'clr3', 'difficulty': 'none', 'answ': 'left', 'l_test': '#64B5F6', 'r_test': '#4DD0E1', 'realclr2': '#1E88E5', 'realclr3': '#64B5F6', 'realclr': '#64B5F6', 'fake_hue': 'cyan'}, {'ID': 119, 'clr1p1': '#006064', 'clr2p1': '#00ACC1', 'clr3p1': '#4DD0E1', 'clr4p1': '#E0F7FA', 'clr1p2': '#01579B', 'clr2p2': '#039BE5', 'clr3p2': '#000000', 'clr4p2': '#E1F5FE', 'Hshow': 'cyan', 'Htest': 'l_blue', 'stim_var': 'l_up', 'blank_clr': 'clr3', 'difficulty': 'none', 'answ': 'right', 'l_test': '#4DB6AC', 'r_test': '#4FC3F7', 'realclr2': '#039BE5', 'realclr3': '#4FC3F7', 'realclr': '#4FC3F7', 'fake_hue': 'teal'}, {'ID': 120, 'clr1p1': '#BF360C', 'clr2p1': '#F4511E', 'clr3p1': '#FF8A65', 'clr4p1': '#FBE9E7', 'clr1p2': '#33691E', 'clr2p2': '#7CB342', 'clr3p2': '#000000', 'clr4p2': '#F1F8E9', 'Hshow': 'd_orange', 'Htest': 'l_green', 'stim_var': 'l_up', 'blank_clr': 'clr3', 'difficulty': 'none', 'answ': 'right', 'l_test': '#FFF176', 'r_test': '#AED581', 'realclr2': '#7CB342', 'realclr3': '#AED581', 'realclr': '#AED581', 'fake_hue': 'yellow'}]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="CC_easylowhard_generalcond.xlsx" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="name" updates="None" val="training" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="blank"/>
+    <Routine name="CC_trial"/>
+    <Routine name="blank"/>
+    <Routine name="CC_trainAnsw"/>
+    <Routine name="FB"/>
+    <LoopTerminator name="training"/>
+    <Routine name="CC_instr2"/>
+    <LoopInitiator loopType="TrialHandler" name="trials">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'ID': 2, 'clr1p1': '#E0F2F1', 'clr2p1': '#4DB6AC', 'clr3p1': '#00897B', 'clr4p1': '#004D40', 'clr1p2': '#FFFDE7', 'clr2p2': '#000000', 'clr3p2': '#FDD835', 'clr4p2': '#F57F17', 'Hshow': 'teal', 'Htest': 'yellow', 'stim_var': 'l_down', 'blank_clr': 'clr2', 'difficulty': 'high', 'answ': 'left', 'l_test': '#FFF176', 'r_test': '#FFF59D', 'realclr2': '#FFF176', 'realclr3': '#FDD835', 'realclr': '#FFF176', 'fake_hue': 'yellow'}, {'ID': 3, 'clr1p1': '#EFEBE9', 'clr2p1': '#A1887F', 'clr3p1': '#6D4C41', 'clr4p1': '#3E2723', 'clr1p2': '#E8F5E9', 'clr2p2': '#000000', 'clr3p2': '#43A047', 'clr4p2': '#1B5E20', 'Hshow': 'brown', 'Htest': 'green', 'stim_var': 'l_down', 'blank_clr': 'clr2', 'difficulty': 'high', 'answ': 'left', 'l_test': '#81C784', 'r_test': '#A5D6A7', 'realclr2': '#81C784', 'realclr3': '#43A047', 'realclr': '#81C784', 'fake_hue': 'green'}, {'ID': 4, 'clr1p1': '#FFEBEE', 'clr2p1': '#E57373', 'clr3p1': '#E53935', 'clr4p1': '#B71C1C', 'clr1p2': '#FFFDE7', 'clr2p2': '#000000', 'clr3p2': '#FDD835', 'clr4p2': '#F57F17', 'Hshow': 'red', 'Htest': 'yellow', 'stim_var': 'l_down', 'blank_clr': 'clr2', 'difficulty': 'high', 'answ': 'left', 'l_test': '#FFF176', 'r_test': '#FFEE58', 'realclr2': '#FFF176', 'realclr3': '#FDD835', 'realclr': '#FFF176', 'fake_hue': 'yellow'}, {'ID': 5, 'clr1p1': '#FCE4EC', 'clr2p1': '#F06292', 'clr3p1': '#D81B60', 'clr4p1': '#880E4F', 'clr1p2': '#FBE9E7', 'clr2p2': '#000000', 'clr3p2': '#F4511E', 'clr4p2': '#BF360C', 'Hshow': 'pink', 'Htest': 'd_orange', 'stim_var': 'l_down', 'blank_clr': 'clr2', 'difficulty': 'high', 'answ': 'right', 'l_test': '#FFAB91', 'r_test': '#FF8A65', 'realclr2': '#FF8A65', 'realclr3': '#F4511E', 'realclr': '#FF8A65', 'fake_hue': 'd_orange'}, {'ID': 6, 'clr1p1': '#E8F5E9', 'clr2p1': '#81C784', 'clr3p1': '#43A047', 'clr4p1': '#1B5E20', 'clr1p2': '#FFEBEE', 'clr2p2': '#000000', 'clr3p2': '#E53935', 'clr4p2': '#B71C1C', 'Hshow': 'green', 'Htest': 'red', 'stim_var': 'l_down', 'blank_clr': 'clr2', 'difficulty': 'high', 'answ': 'right', 'l_test': '#EF9A9A', 'r_test': '#E57373', 'realclr2': '#E57373', 'realclr3': '#E53935', 'realclr': '#E57373', 'fake_hue': 'red'}, {'ID': 8, 'clr1p1': '#F1F8E9', 'clr2p1': '#AED581', 'clr3p1': '#7CB342', 'clr4p1': '#33691E', 'clr1p2': '#FFF3E0', 'clr2p2': '#000000', 'clr3p2': '#FB8C00', 'clr4p2': '#E65100', 'Hshow': 'l_green', 'Htest': 'orange', 'stim_var': 'l_down', 'blank_clr': 'clr2', 'difficulty': 'low', 'answ': 'left', 'l_test': '#FFB74D', 'r_test': '#FFE0B2', 'realclr2': '#FFB74D', 'realclr3': '#FB8C00', 'realclr': '#FFB74D', 'fake_hue': 'orange'}, {'ID': 9, 'clr1p1': '#EDE7F6', 'clr2p1': '#9575CD', 'clr3p1': '#5E35B1', 'clr4p1': '#311B92', 'clr1p2': '#FFF8E1', 'clr2p2': '#000000', 'clr3p2': '#FFB300', 'clr4p2': '#FF6F00', 'Hshow': 'd_purple', 'Htest': 'amber', 'stim_var': 'l_down', 'blank_clr': 'clr2', 'difficulty': 'low', 'answ': 'right', 'l_test': '#FFC107', 'r_test': '#FFD54F', 'realclr2': '#FFD54F', 'realclr3': '#FFB300', 'realclr': '#FFD54F', 'fake_hue': 'amber'}, {'ID': 10, 'clr1p1': '#E0F2F1', 'clr2p1': '#4DB6AC', 'clr3p1': '#00897B', 'clr4p1': '#004D40', 'clr1p2': '#FBE9E7', 'clr2p2': '#000000', 'clr3p2': '#F4511E', 'clr4p2': '#BF360C', 'Hshow': 'lime', 'Htest': 'd_orange', 'stim_var': 'l_down', 'blank_clr': 'clr2', 'difficulty': 'low', 'answ': 'right', 'l_test': '#FF5722', 'r_test': '#FF8A65', 'realclr2': '#FF8A65', 'realclr3': '#F4511E', 'realclr': '#FF8A65', 'fake_hue': 'd_orange'}, {'ID': 11, 'clr1p1': '#E8EAF6', 'clr2p1': '#7986CB', 'clr3p1': '#3949AB', 'clr4p1': '#1A237E', 'clr1p2': '#FFF3E0', 'clr2p2': '#FFB74D', 'clr3p2': '#000000', 'clr4p2': '#E65100', 'Hshow': 'indigo', 'Htest': 'orange', 'stim_var': 'l_down', 'blank_clr': 'clr3', 'difficulty': 'high', 'answ': 'left', 'l_test': '#FB8C00', 'r_test': '#FF9800', 'realclr2': '#FFB74D', 'realclr3': '#FB8C00', 'realclr': '#FB8C00', 'fake_hue': 'orange'}, {'ID': 12, 'clr1p1': '#FFFDE7', 'clr2p1': '#FFF176', 'clr3p1': '#FDD835', 'clr4p1': '#F57F17', 'clr1p2': '#E0F7FA', 'clr2p2': '#4DD0E1', 'clr3p2': '#000000', 'clr4p2': '#006064', 'Hshow': 'yellow', 'Htest': 'cyan', 'stim_var': 'l_down', 'blank_clr': 'clr3', 'difficulty': 'high', 'answ': 'left', 'l_test': '#00ACC1', 'r_test': '#00BCD4', 'realclr2': '#4DD0E1', 'realclr3': '#00ACC1', 'realclr': '#00ACC1', 'fake_hue': 'cyan'}, {'ID': 14, 'clr1p1': '#FFF8E1', 'clr2p1': '#FFD54F', 'clr3p1': '#FFB300', 'clr4p1': '#FF6F00', 'clr1p2': '#E8EAF6', 'clr2p2': '#7986CB', 'clr3p2': '#000000', 'clr4p2': '#1A237E', 'Hshow': 'amber', 'Htest': 'indigo', 'stim_var': 'l_down', 'blank_clr': 'clr3', 'difficulty': 'high', 'answ': 'right', 'l_test': '#3F51B5', 'r_test': '#3949AB', 'realclr2': '#7986CB', 'realclr3': '#3949AB', 'realclr': '#3949AB', 'fake_hue': 'indigo'}, {'ID': 15, 'clr1p1': '#E1F5FE', 'clr2p1': '#4FC3F7', 'clr3p1': '#039BE5', 'clr4p1': '#01579B', 'clr1p2': '#EDE7F6', 'clr2p2': '#9575CD', 'clr3p2': '#000000', 'clr4p2': '#311B92', 'Hshow': 'l_blue', 'Htest': 'd_purple', 'stim_var': 'l_down', 'blank_clr': 'clr3', 'difficulty': 'low', 'answ': 'left', 'l_test': '#5E35B1', 'r_test': '#7E57C2', 'realclr2': '#9575CD', 'realclr3': '#5E35B1', 'realclr': '#5E35B1', 'fake_hue': 'd_purple'}, {'ID': 16, 'clr1p1': '#FFF3E0', 'clr2p1': '#FFB74D', 'clr3p1': '#FB8C00', 'clr4p1': '#E65100', 'clr1p2': '#FCE4EC', 'clr2p2': '#F06292', 'clr3p2': '#000000', 'clr4p2': '#880E4F', 'Hshow': 'orange', 'Htest': 'pink', 'stim_var': 'l_down', 'blank_clr': 'clr3', 'difficulty': 'low', 'answ': 'left', 'l_test': '#D81B60', 'r_test': '#EC407A', 'realclr2': '#F06292', 'realclr3': '#D81B60', 'realclr': '#D81B60', 'fake_hue': 'pink'}, {'ID': 17, 'clr1p1': '#F3E5F5', 'clr2p1': '#BA68C8', 'clr3p1': '#8E24AA', 'clr4p1': '#4A148C', 'clr1p2': '#FBE9E7', 'clr2p2': '#FFB74D', 'clr3p2': '#000000', 'clr4p2': '#BF360C', 'Hshow': 'purple', 'Htest': 'd_orange', 'stim_var': 'l_down', 'blank_clr': 'clr3', 'difficulty': 'low', 'answ': 'left', 'l_test': '#F4511E', 'r_test': '#D84315', 'realclr2': '#FF8A65', 'realclr3': '#F4511E', 'realclr': '#F4511E', 'fake_hue': 'd_orange'}, {'ID': 18, 'clr1p1': '#FFF8E1', 'clr2p1': '#FFD54F', 'clr3p1': '#FFB300', 'clr4p1': '#FF6F00', 'clr1p2': '#EFEBE9', 'clr2p2': '#A1887F', 'clr3p2': '#000000', 'clr4p2': '#3E2723', 'Hshow': 'amber', 'Htest': 'brown', 'stim_var': 'l_down', 'blank_clr': 'clr3', 'difficulty': 'low', 'answ': 'left', 'l_test': '#6D4C41', 'r_test': '#8D6E63', 'realclr2': '#A1887F', 'realclr3': '#6D4C41', 'realclr': '#6D4C41', 'fake_hue': 'brown'}, {'ID': 20, 'clr1p1': '#FBE9E7', 'clr2p1': '#FF8A65', 'clr3p1': '#F4511E', 'clr4p1': '#BF360C', 'clr1p2': '#F3E5F5', 'clr2p2': '#BA68C8', 'clr3p2': '#000000', 'clr4p2': '#4A148C', 'Hshow': 'd_orange', 'Htest': 'purple', 'stim_var': 'l_down', 'blank_clr': 'clr3', 'difficulty': 'low', 'answ': 'right', 'l_test': '#6A1B9A', 'r_test': '#8E24AA', 'realclr2': '#BA68C8', 'realclr3': '#8E24AA', 'realclr': '#8E24AA', 'fake_hue': 'purple'}, {'ID': 21, 'clr1p1': '#8E24AA', 'clr2p1': '#4A148C', 'clr3p1': '#F3E5F5', 'clr4p1': '#BA68C8', 'clr1p2': '#5E35B1', 'clr2p2': '#000000', 'clr3p2': '#EDE7F6', 'clr4p2': '#9575CD', 'Hshow': 'purple', 'Htest': 'd_purple', 'stim_var': 'l_rand1', 'blank_clr': 'clr2', 'difficulty': 'high', 'answ': 'left', 'l_test': '#311B92', 'r_test': '#4527A0', 'realclr2': '#311B92', 'realclr3': '#EDE7F6', 'realclr': '#311B92', 'fake_hue': 'd_purple'}, {'ID': 22, 'clr1p1': '#039BE5', 'clr2p1': '#01579B', 'clr3p1': '#E1F5FE', 'clr4p1': '#4FC3F7', 'clr1p2': '#D81B60', 'clr2p2': '#000000', 'clr3p2': '#FCE4EC', 'clr4p2': '#F06292', 'Hshow': 'l_blue', 'Htest': 'pink', 'stim_var': 'l_rand1', 'blank_clr': 'clr2', 'difficulty': 'high', 'answ': 'left', 'l_test': '#880E4F', 'r_test': '#AD1457', 'realclr2': '#880E4F', 'realclr3': '#FCE4EC', 'realclr': '#880E4F', 'fake_hue': 'pink'}, {'ID': 24, 'clr1p1': '#FB8C00', 'clr2p1': '#E65100', 'clr3p1': '#FFF3E0', 'clr4p1': '#FFB74D', 'clr1p2': '#FDD835', 'clr2p2': '#000000', 'clr3p2': '#FFFDE7', 'clr4p2': '#FFF176', 'Hshow': 'orange', 'Htest': 'yellow', 'stim_var': 'l_rand1', 'blank_clr': 'clr2', 'difficulty': 'high', 'answ': 'left', 'l_test': '#F57F17', 'r_test': '#F9A825', 'realclr2': '#F57F17', 'realclr3': '#FFFDE7', 'realclr': '#F57F17', 'fake_hue': 'yellow'}, {'ID': 25, 'clr1p1': '#3949AB', 'clr2p1': '#1A237E', 'clr3p1': '#E8EAF6', 'clr4p1': '#7986CB', 'clr1p2': '#7CB342', 'clr2p2': '#000000', 'clr3p2': '#F1F8E9', 'clr4p2': '#AED581', 'Hshow': 'indigo', 'Htest': 'l_green', 'stim_var': 'l_rand1', 'blank_clr': 'clr2', 'difficulty': 'high', 'answ': 'left', 'l_test': '#33691E', 'r_test': '#558B2F', 'realclr2': '#33691E', 'realclr3': '#F1F8E9', 'realclr': '#33691E', 'fake_hue': 'l_green'}, {'ID': 26, 'clr1p1': '#E53935', 'clr2p1': '#B71C1C', 'clr3p1': '#FFEBEE', 'clr4p1': '#E57373', 'clr1p2': '#7CB342', 'clr2p2': '#000000', 'clr3p2': '#F1F8E9', 'clr4p2': '#AED581', 'Hshow': 'red', 'Htest': 'l_green', 'stim_var': 'l_rand1', 'blank_clr': 'clr2', 'difficulty': 'low', 'answ': 'right', 'l_test': '#689F38', 'r_test': '#33691E', 'realclr2': '#33691E', 'realclr3': '#F1F8E9', 'realclr': '#33691E', 'fake_hue': 'l_green'}, {'ID': 27, 'clr1p1': '#3949AB', 'clr2p1': '#1A237E', 'clr3p1': '#E8EAF6', 'clr4p1': '#7986CB', 'clr1p2': '#FB8C00', 'clr2p2': '#000000', 'clr3p2': '#FFF3E0', 'clr4p2': '#FFB74D', 'Hshow': 'indigo', 'Htest': 'orange', 'stim_var': 'l_rand1', 'blank_clr': 'clr2', 'difficulty': 'low', 'answ': 'right', 'l_test': '#F57C00', 'r_test': '#E65100', 'realclr2': '#E65100', 'realclr3': '#FFF3E0', 'realclr': '#E65100', 'fake_hue': 'orange'}, {'ID': 29, 'clr1p1': '#FDD835', 'clr2p1': '#F57F17', 'clr3p1': '#FFFDE7', 'clr4p1': '#FFF176', 'clr1p2': '#F4511E', 'clr2p2': '#000000', 'clr3p2': '#FBE9E7', 'clr4p2': '#FF8A65', 'Hshow': 'yellow', 'Htest': 'd_orange', 'stim_var': 'l_rand1', 'blank_clr': 'clr2', 'difficulty': 'low', 'answ': 'left', 'l_test': '#BF360C', 'r_test': '#E64A19', 'realclr2': '#BF360C', 'realclr3': '#FBE9E7', 'realclr': '#BF360C', 'fake_hue': 'd_orange'}, {'ID': 30, 'clr1p1': '#6D4C41', 'clr2p1': '#3E2723', 'clr3p1': '#EFEBE9', 'clr4p1': '#A1887F', 'clr1p2': '#00ACC1', 'clr2p2': '#000000', 'clr3p2': '#E0F7FA', 'clr4p2': '#4DD0E1', 'Hshow': 'brown', 'Htest': 'cyan', 'stim_var': 'l_rand1', 'blank_clr': 'clr2', 'difficulty': 'low', 'answ': 'right', 'l_test': '#0097A7', 'r_test': '#006064', 'realclr2': '#006064', 'realclr3': '#E0F7FA', 'realclr': '#006064', 'fake_hue': 'cyan'}, {'ID': 32, 'clr1p1': '#D81B60', 'clr2p1': '#880E4F', 'clr3p1': '#FCE4EC', 'clr4p1': '#F06292', 'clr1p2': '#FDD835', 'clr2p2': '#F57F17', 'clr3p2': '#000000', 'clr4p2': '#FFF176', 'Hshow': 'pink', 'Htest': 'yellow', 'stim_var': 'l_rand1', 'blank_clr': 'clr3', 'difficulty': 'high', 'answ': 'right', 'l_test': '#FFF9C4', 'r_test': '#FFFDE7', 'realclr2': '#F57F17', 'realclr3': '#FFFDE7', 'realclr': '#FFFDE7', 'fake_hue': 'yellow'}, {'ID': 33, 'clr1p1': '#1E88E5', 'clr2p1': '#0D47A1', 'clr3p1': '#E3F2FD', 'clr4p1': '#64B5F6', 'clr1p2': '#C0CA33', 'clr2p2': '#827717', 'clr3p2': '#000000', 'clr4p2': '#DCE775', 'Hshow': 'blue', 'Htest': 'lime', 'stim_var': 'l_rand1', 'blank_clr': 'clr3', 'difficulty': 'high', 'answ': 'right', 'l_test': '#F0F4C3', 'r_test': '#F9FBE7', 'realclr2': '#827717', 'realclr3': '#F9FBE7', 'realclr': '#F9FBE7', 'fake_hue': 'lime'}, {'ID': 34, 'clr1p1': '#43A047', 'clr2p1': '#1B5E20', 'clr3p1': '#E8F5E9', 'clr4p1': '#81C784', 'clr1p2': '#00897B', 'clr2p2': '#004D40', 'clr3p2': '#000000', 'clr4p2': '#4DB6AC', 'Hshow': 'green', 'Htest': 'teal', 'stim_var': 'l_rand1', 'blank_clr': 'clr3', 'difficulty': 'high', 'answ': 'right', 'l_test': '#B2DFDB', 'r_test': '#E0F2F1', 'realclr2': '#004D40', 'realclr3': '#E0F2F1', 'realclr': '#E0F2F1', 'fake_hue': 'teal'}, {'ID': 35, 'clr1p1': '#FFB300', 'clr2p1': '#FF6F00', 'clr3p1': '#FFF8E1', 'clr4p1': '#FFD54F', 'clr1p2': '#039BE5', 'clr2p2': '#01579B', 'clr3p2': '#000000', 'clr4p2': '#4FC3F7', 'Hshow': 'amber', 'Htest': 'l_blue', 'stim_var': 'l_rand1', 'blank_clr': 'clr3', 'difficulty': 'high', 'answ': 'right', 'l_test': '#B3E5FC', 'r_test': '#E1F5FE', 'realclr2': '#01579B', 'realclr3': '#E1F5FE', 'realclr': '#E1F5FE', 'fake_hue': 'l_blue'}, {'ID': 36, 'clr1p1': '#5E35B1', 'clr2p1': '#311B92', 'clr3p1': '#EDE7F6', 'clr4p1': '#9575CD', 'clr1p2': '#6D4C41', 'clr2p2': '#3E2723', 'clr3p2': '#000000', 'clr4p2': '#A1887F', 'Hshow': 'd_purple', 'Htest': 'brown', 'stim_var': 'l_rand1', 'blank_clr': 'clr3', 'difficulty': 'low', 'answ': 'left', 'l_test': '#EFEBE9', 'r_test': '#BCAAA4', 'realclr2': '#3E2723', 'realclr3': '#EFEBE9', 'realclr': '#EFEBE9', 'fake_hue': 'brown'}, {'ID': 38, 'clr1p1': '#00897B', 'clr2p1': '#004D40', 'clr3p1': '#E0F2F1', 'clr4p1': '#4DB6AC', 'clr1p2': '#3949AB', 'clr2p2': '#1A237E', 'clr3p2': '#000000', 'clr4p2': '#7986CB', 'Hshow': 'lime', 'Htest': 'indigo', 'stim_var': 'l_rand1', 'blank_clr': 'clr3', 'difficulty': 'low', 'answ': 'left', 'l_test': '#E8EAF6', 'r_test': '#9FA8DA', 'realclr2': '#1A237E', 'realclr3': '#E8EAF6', 'realclr': '#E8EAF6', 'fake_hue': 'indigo'}, {'ID': 39, 'clr1p1': '#F4511E', 'clr2p1': '#BF360C', 'clr3p1': '#FBE9E7', 'clr4p1': '#FF8A65', 'clr1p2': '#43A047', 'clr2p2': '#1B5E20', 'clr3p2': '#000000', 'clr4p2': '#81C784', 'Hshow': 'd_orange', 'Htest': 'green', 'stim_var': 'l_rand1', 'blank_clr': 'clr3', 'difficulty': 'low', 'answ': 'left', 'l_test': '#E8F5E9', 'r_test': '#A5D6A7', 'realclr2': '#1B5E20', 'realclr3': '#E8F5E9', 'realclr': '#E8F5E9', 'fake_hue': 'green'}, {'ID': 40, 'clr1p1': '#43A047', 'clr2p1': '#1B5E20', 'clr3p1': '#E8F5E9', 'clr4p1': '#81C784', 'clr1p2': '#00ACC1', 'clr2p2': '#006064', 'clr3p2': '#000000', 'clr4p2': '#4DD0E1', 'Hshow': 'green', 'Htest': 'cyan', 'stim_var': 'l_rand1', 'blank_clr': 'clr3', 'difficulty': 'low', 'answ': 'left', 'l_test': '#E0F7FA', 'r_test': '#80DEEA', 'realclr2': '#006064', 'realclr3': '#E0F7FA', 'realclr': '#E0F7FA', 'fake_hue': 'cyan'}, {'ID': 41, 'clr1p1': '#880E4F', 'clr2p1': '#FCE4EC', 'clr3p1': '#D81B60', 'clr4p1': '#F06292', 'clr1p2': '#33691E', 'clr2p2': '#000000', 'clr3p2': '#7CB342', 'clr4p2': '#AED581', 'Hshow': 'pink', 'Htest': 'l_green', 'stim_var': 'l_rand2', 'blank_clr': 'clr2', 'difficulty': 'high', 'answ': 'left', 'l_test': '#F1F8E9', 'r_test': '#DCEDC8', 'realclr2': '#F1F8E9', 'realclr3': '#7CB342', 'realclr': '#F1F8E9', 'fake_hue': 'l_green'}, {'ID': 43, 'clr1p1': '#1B5E20', 'clr2p1': '#E8F5E9', 'clr3p1': '#43A047', 'clr4p1': '#81C784', 'clr1p2': '#006064', 'clr2p2': '#000000', 'clr3p2': '#00ACC1', 'clr4p2': '#4DD0E1', 'Hshow': 'green', 'Htest': 'cyan', 'stim_var': 'l_rand2', 'blank_clr': 'clr2', 'difficulty': 'high', 'answ': 'left', 'l_test': '#E0F7FA', 'r_test': '#B2EBF2', 'realclr2': '#E0F7FA', 'realclr3': '#00ACC1', 'realclr': '#E0F7FA', 'fake_hue': 'cyan'}, {'ID': 44, 'clr1p1': '#FF6F00', 'clr2p1': '#FFF8E1', 'clr3p1': '#FFB300', 'clr4p1': '#FFD54F', 'clr1p2': '#880E4F', 'clr2p2': '#000000', 'clr3p2': '#D81B60', 'clr4p2': '#F06292', 'Hshow': 'amber', 'Htest': 'pink', 'stim_var': 'l_rand2', 'blank_clr': 'clr2', 'difficulty': 'high', 'answ': 'left', 'l_test': '#FCE4EC', 'r_test': '#F8BBD0', 'realclr2': '#FCE4EC', 'realclr3': '#D81B60', 'realclr': '#FCE4EC', 'fake_hue': 'pink'}, {'ID': 45, 'clr1p1': '#FF6F00', 'clr2p1': '#FFF8E1', 'clr3p1': '#FFB300', 'clr4p1': '#FFD54F', 'clr1p2': '#4A148C', 'clr2p2': '#000000', 'clr3p2': '#8E24AA', 'clr4p2': '#BA68C8', 'Hshow': 'amber', 'Htest': 'purple', 'stim_var': 'l_rand2', 'blank_clr': 'clr2', 'difficulty': 'high', 'answ': 'right', 'l_test': '#E1BEE7', 'r_test': '#F3E5F5', 'realclr2': '#F3E5F5', 'realclr3': '#8E24AA', 'realclr': '#F3E5F5', 'fake_hue': 'purple'}, {'ID': 46, 'clr1p1': '#311B92', 'clr2p1': '#EDE7F6', 'clr3p1': '#5E35B1', 'clr4p1': '#9575CD', 'clr1p2': '#B71C1C', 'clr2p2': '#000000', 'clr3p2': '#E53935', 'clr4p2': '#E57373', 'Hshow': 'd_purple', 'Htest': 'red', 'stim_var': 'l_rand2', 'blank_clr': 'clr2', 'difficulty': 'low', 'answ': 'right', 'l_test': '#EF9A9A', 'r_test': '#FFEBEE', 'realclr2': '#FFEBEE', 'realclr3': '#E53935', 'realclr': '#FFEBEE', 'fake_hue': 'red'}, {'ID': 48, 'clr1p1': '#004D40', 'clr2p1': '#E0F2F1', 'clr3p1': '#00897B', 'clr4p1': '#4DB6AC', 'clr1p2': '#E65100', 'clr2p2': '#000000', 'clr3p2': '#FB8C00', 'clr4p2': '#FFB74D', 'Hshow': 'lime', 'Htest': 'orange', 'stim_var': 'l_rand2', 'blank_clr': 'clr2', 'difficulty': 'low', 'answ': 'right', 'l_test': '#FFCC80', 'r_test': '#FFF3E0', 'realclr2': '#FFF3E0', 'realclr3': '#FB8C00', 'realclr': '#FFF3E0', 'fake_hue': 'orange'}, {'ID': 49, 'clr1p1': '#BF360C', 'clr2p1': '#FBE9E7', 'clr3p1': '#F4511E', 'clr4p1': '#FF8A65', 'clr1p2': '#B71C1C', 'clr2p2': '#000000', 'clr3p2': '#E53935', 'clr4p2': '#E57373', 'Hshow': 'd_orange', 'Htest': 'red', 'stim_var': 'l_rand2', 'blank_clr': 'clr2', 'difficulty': 'low', 'answ': 'right', 'l_test': '#EF9A9A', 'r_test': '#FFEBEE', 'realclr2': '#FFEBEE', 'realclr3': '#E53935', 'realclr': '#FFEBEE', 'fake_hue': 'red'}, {'ID': 50, 'clr1p1': '#B71C1C', 'clr2p1': '#FFEBEE', 'clr3p1': '#E53935', 'clr4p1': '#E57373', 'clr1p2': '#E65100', 'clr2p2': '#000000', 'clr3p2': '#FB8C00', 'clr4p2': '#FFB74D', 'Hshow': 'red', 'Htest': 'orange', 'stim_var': 'l_rand2', 'blank_clr': 'clr2', 'difficulty': 'low', 'answ': 'right', 'l_test': '#FFCC80', 'r_test': '#FFF3E0', 'realclr2': '#FFF3E0', 'realclr3': '#FB8C00', 'realclr': '#FFF3E0', 'fake_hue': 'orange'}, {'ID': 52, 'clr1p1': '#1A237E', 'clr2p1': '#E8EAF6', 'clr3p1': '#3949AB', 'clr4p1': '#7986CB', 'clr1p2': '#01579B', 'clr2p2': '#E1F5FE', 'clr3p2': '#000000', 'clr4p2': '#4FC3F7', 'Hshow': 'indigo', 'Htest': 'l_blue', 'stim_var': 'l_rand2', 'blank_clr': 'clr3', 'difficulty': 'high', 'answ': 'right', 'l_test': '#03A9F4', 'r_test': '#039BE5', 'realclr2': '#E1F5FE', 'realclr3': '#039BE5', 'realclr': '#039BE5', 'fake_hue': 'l_blue'}, {'ID': 53, 'clr1p1': '#004D40', 'clr2p1': '#E0F2F1', 'clr3p1': '#00897B', 'clr4p1': '#4DB6AC', 'clr1p2': '#3E2723', 'clr2p2': '#EFEBE9', 'clr3p2': '#000000', 'clr4p2': '#A1887F', 'Hshow': 'teal', 'Htest': 'brown', 'stim_var': 'l_rand2', 'blank_clr': 'clr3', 'difficulty': 'high', 'answ': 'right', 'l_test': '#5D4037', 'r_test': '#6D4C41', 'realclr2': '#EFEBE9', 'realclr3': '#6D4C41', 'realclr': '#6D4C41', 'fake_hue': 'brown'}, {'ID': 54, 'clr1p1': '#F57F17', 'clr2p1': '#FFFDE7', 'clr3p1': '#FDD835', 'clr4p1': '#FFF176', 'clr1p2': '#BF360C', 'clr2p2': '#FBE9E7', 'clr3p2': '#000000', 'clr4p2': '#FF8A65', 'Hshow': 'yellow', 'Htest': 'd_orange', 'stim_var': 'l_rand2', 'blank_clr': 'clr3', 'difficulty': 'high', 'answ': 'right', 'l_test': '#FF5722', 'r_test': '#F4511E', 'realclr2': '#FBE9E7', 'realclr3': '#F4511E', 'realclr': '#F4511E', 'fake_hue': 'd_orange'}, {'ID': 55, 'clr1p1': '#3E2723', 'clr2p1': '#EFEBE9', 'clr3p1': '#6D4C41', 'clr4p1': '#A1887F', 'clr1p2': '#0D47A1', 'clr2p2': '#E3F2FD', 'clr3p2': '#000000', 'clr4p2': '#64B5F6', 'Hshow': 'brown', 'Htest': 'blue', 'stim_var': 'l_rand2', 'blank_clr': 'clr3', 'difficulty': 'high', 'answ': 'right', 'l_test': '#2196F3', 'r_test': '#1E88E5', 'realclr2': '#E3F2FD', 'realclr3': '#1E88E5', 'realclr': '#1E88E5', 'fake_hue': 'blue'}, {'ID': 56, 'clr1p1': '#4A148C', 'clr2p1': '#F3E5F5', 'clr3p1': '#8E24AA', 'clr4p1': '#BA68C8', 'clr1p2': '#827717', 'clr2p2': '#F9FBE7', 'clr3p2': '#000000', 'clr4p2': '#DCE775', 'Hshow': 'purple', 'Htest': 'lime', 'stim_var': 'l_rand2', 'blank_clr': 'clr3', 'difficulty': 'low', 'answ': 'left', 'l_test': '#C0CA33', 'r_test': '#D4E157', 'realclr2': '#F9FBE7', 'realclr3': '#C0CA33', 'realclr': '#C0CA33', 'fake_hue': 'lime'}, {'ID': 58, 'clr1p1': '#33691E', 'clr2p1': '#F1F8E9', 'clr3p1': '#7CB342', 'clr4p1': '#AED581', 'clr1p2': '#0D47A1', 'clr2p2': '#E3F2FD', 'clr3p2': '#000000', 'clr4p2': '#64B5F6', 'Hshow': 'l_green', 'Htest': 'blue', 'stim_var': 'l_rand2', 'blank_clr': 'clr3', 'difficulty': 'low', 'answ': 'left', 'l_test': '#1E88E5', 'r_test': '#42A5F5', 'realclr2': '#E3F2FD', 'realclr3': '#1E88E5', 'realclr': '#1E88E5', 'fake_hue': 'blue'}, {'ID': 59, 'clr1p1': '#E65100', 'clr2p1': '#FFF3E0', 'clr3p1': '#FB8C00', 'clr4p1': '#FFB74D', 'clr1p2': '#004D40', 'clr2p2': '#E0F2F1', 'clr3p2': '#000000', 'clr4p2': '#4DB6AC', 'Hshow': 'orange', 'Htest': 'teal', 'stim_var': 'l_rand2', 'blank_clr': 'clr3', 'difficulty': 'low', 'answ': 'left', 'l_test': '#00897B', 'r_test': '#00695C', 'realclr2': '#E0F2F1', 'realclr3': '#00897B', 'realclr': '#00897B', 'fake_hue': 'teal'}, {'ID': 60, 'clr1p1': '#004D40', 'clr2p1': '#E0F2F1', 'clr3p1': '#00897B', 'clr4p1': '#4DB6AC', 'clr1p2': '#BF360C', 'clr2p2': '#FBE9E7', 'clr3p2': '#000000', 'clr4p2': '#FF8A65', 'Hshow': 'teal', 'Htest': 'd_orange', 'stim_var': 'l_rand2', 'blank_clr': 'clr3', 'difficulty': 'low', 'answ': 'right', 'l_test': '#D84315', 'r_test': '#F4511E', 'realclr2': '#FBE9E7', 'realclr3': '#F4511E', 'realclr': '#F4511E', 'fake_hue': 'd_orange'}, {'ID': 61, 'clr1p1': '#4A148C', 'clr2p1': '#8E24AA', 'clr3p1': '#BA68C8', 'clr4p1': '#F3E5F5', 'clr1p2': '#0D47A1', 'clr2p2': '#000000', 'clr3p2': '#64B5F6', 'clr4p2': '#E3F2FD', 'Hshow': 'purple', 'Htest': 'blue', 'stim_var': 'l_up', 'blank_clr': 'clr2', 'difficulty': 'high', 'answ': 'left', 'l_test': '#1E88E5', 'r_test': '#2196F3', 'realclr2': '#1E88E5', 'realclr3': '#64B5F6', 'realclr': '#1E88E5', 'fake_hue': 'blue'}, {'ID': 62, 'clr1p1': '#33691E', 'clr2p1': '#7CB342', 'clr3p1': '#AED581', 'clr4p1': '#F1F8E9', 'clr1p2': '#880E4F', 'clr2p2': '#000000', 'clr3p2': '#F06292', 'clr4p2': '#FCE4EC', 'Hshow': 'l_green', 'Htest': 'pink', 'stim_var': 'l_up', 'blank_clr': 'clr2', 'difficulty': 'high', 'answ': 'left', 'l_test': '#D81B60', 'r_test': '#E91E63', 'realclr2': '#D81B60', 'realclr3': '#F06292', 'realclr': '#D81B60', 'fake_hue': 'pink'}, {'ID': 64, 'clr1p1': '#827717', 'clr2p1': '#C0CA33', 'clr3p1': '#DCE775', 'clr4p1': '#F9FBE7', 'clr1p2': '#004D40', 'clr2p2': '#000000', 'clr3p2': '#4DB6AC', 'clr4p2': '#E0F2F1', 'Hshow': 'lime', 'Htest': 'teal', 'stim_var': 'l_up', 'blank_clr': 'clr2', 'difficulty': 'high', 'answ': 'right', 'l_test': '#009688', 'r_test': '#00897B', 'realclr2': '#00897B', 'realclr3': '#4DB6AC', 'realclr': '#00897B', 'fake_hue': 'teal'}, {'ID': 65, 'clr1p1': '#311B92', 'clr2p1': '#5E35B1', 'clr3p1': '#9575CD', 'clr4p1': '#EDE7F6', 'clr1p2': '#880E4F', 'clr2p2': '#000000', 'clr3p2': '#F06292', 'clr4p2': '#FCE4EC', 'Hshow': 'd_purple', 'Htest': 'pink', 'stim_var': 'l_up', 'blank_clr': 'clr2', 'difficulty': 'high', 'answ': 'right', 'l_test': '#E91E63', 'r_test': '#D81B60', 'realclr2': '#D81B60', 'realclr3': '#F06292', 'realclr': '#D81B60', 'fake_hue': 'pink'}, {'ID': 66, 'clr1p1': '#1B5E20', 'clr2p1': '#43A047', 'clr3p1': '#81C784', 'clr4p1': '#E8F5E9', 'clr1p2': '#004D40', 'clr2p2': '#000000', 'clr3p2': '#4DB6AC', 'clr4p2': '#E0F2F1', 'Hshow': 'green', 'Htest': 'lime', 'stim_var': 'l_up', 'blank_clr': 'clr2', 'difficulty': 'high', 'answ': 'right', 'l_test': '#00796B', 'r_test': '#00897B', 'realclr2': '#00897B', 'realclr3': '#4DB6AC', 'realclr': '#00897B', 'fake_hue': 'lime'}, {'ID': 68, 'clr1p1': '#004D40', 'clr2p1': '#00897B', 'clr3p1': '#4DB6AC', 'clr4p1': '#E0F2F1', 'clr1p2': '#3E2723', 'clr2p2': '#000000', 'clr3p2': '#A1887F', 'clr4p2': '#EFEBE9', 'Hshow': 'teal', 'Htest': 'brown', 'stim_var': 'l_up', 'blank_clr': 'clr2', 'difficulty': 'low', 'answ': 'left', 'l_test': '#6D4C41', 'r_test': '#4E342E', 'realclr2': '#6D4C41', 'realclr3': '#A1887F', 'realclr': '#6D4C41', 'fake_hue': 'brown'}, {'ID': 69, 'clr1p1': '#880E4F', 'clr2p1': '#D81B60', 'clr3p1': '#F06292', 'clr4p1': '#FCE4EC', 'clr1p2': '#B71C1C', 'clr2p2': '#000000', 'clr3p2': '#E57373', 'clr4p2': '#FFEBEE', 'Hshow': 'pink', 'Htest': 'red', 'stim_var': 'l_up', 'blank_clr': 'clr2', 'difficulty': 'low', 'answ': 'right', 'l_test': '#EF5350', 'r_test': '#E53935', 'realclr2': '#E53935', 'realclr3': '#E57373', 'realclr': '#E53935', 'fake_hue': 'red'}, {'ID': 70, 'clr1p1': '#1B5E20', 'clr2p1': '#43A047', 'clr3p1': '#81C784', 'clr4p1': '#E8F5E9', 'clr1p2': '#4A148C', 'clr2p2': '#000000', 'clr3p2': '#BA68C8', 'clr4p2': '#F3E5F5', 'Hshow': 'green', 'Htest': 'purple', 'stim_var': 'l_up', 'blank_clr': 'clr2', 'difficulty': 'low', 'answ': 'right', 'l_test': '#6A1B9A', 'r_test': '#8E24AA', 'realclr2': '#8E24AA', 'realclr3': '#BA68C8', 'realclr': '#8E24AA', 'fake_hue': 'purple'}, {'ID': 72, 'clr1p1': '#E65100', 'clr2p1': '#FB8C00', 'clr3p1': '#FFB74D', 'clr4p1': '#FFF3E0', 'clr1p2': '#0D47A1', 'clr2p2': '#1E88E5', 'clr3p2': '#000000', 'clr4p2': '#E3F2FD', 'Hshow': 'orange', 'Htest': 'blue', 'stim_var': 'l_up', 'blank_clr': 'clr3', 'difficulty': 'high', 'answ': 'left', 'l_test': '#64B5F6', 'r_test': '#42A5F5', 'realclr2': '#1E88E5', 'realclr3': '#64B5F6', 'realclr': '#64B5F6', 'fake_hue': 'blue'}, {'ID': 73, 'clr1p1': '#006064', 'clr2p1': '#00ACC1', 'clr3p1': '#4DD0E1', 'clr4p1': '#E0F7FA', 'clr1p2': '#01579B', 'clr2p2': '#039BE5', 'clr3p2': '#000000', 'clr4p2': '#E1F5FE', 'Hshow': 'cyan', 'Htest': 'l_blue', 'stim_var': 'l_up', 'blank_clr': 'clr3', 'difficulty': 'high', 'answ': 'right', 'l_test': '#81D4FA', 'r_test': '#4FC3F7', 'realclr2': '#039BE5', 'realclr3': '#4FC3F7', 'realclr': '#4FC3F7', 'fake_hue': 'l_blue'}, {'ID': 74, 'clr1p1': '#BF360C', 'clr2p1': '#F4511E', 'clr3p1': '#FF8A65', 'clr4p1': '#FBE9E7', 'clr1p2': '#33691E', 'clr2p2': '#7CB342', 'clr3p2': '#000000', 'clr4p2': '#F1F8E9', 'Hshow': 'd_orange', 'Htest': 'l_green', 'stim_var': 'l_up', 'blank_clr': 'clr3', 'difficulty': 'high', 'answ': 'right', 'l_test': '#C5E1A5', 'r_test': '#AED581', 'realclr2': '#7CB342', 'realclr3': '#AED581', 'realclr': '#AED581', 'fake_hue': 'l_green'}, {'ID': 75, 'clr1p1': '#1A237E', 'clr2p1': '#3949AB', 'clr3p1': '#7986CB', 'clr4p1': '#E8EAF6', 'clr1p2': '#311B92', 'clr2p2': '#5E35B1', 'clr3p2': '#000000', 'clr4p2': '#EDE7F6', 'Hshow': 'indigo', 'Htest': 'd_purple', 'stim_var': 'l_up', 'blank_clr': 'clr3', 'difficulty': 'low', 'answ': 'left', 'l_test': '#9575CD', 'r_test': '#673AB7', 'realclr2': '#5E35B1', 'realclr3': '#9575CD', 'realclr': '#9575CD', 'fake_hue': 'd_purple'}, {'ID': 76, 'clr1p1': '#F57F17', 'clr2p1': '#FDD835', 'clr3p1': '#FFF176', 'clr4p1': '#FFFDE7', 'clr1p2': '#33691E', 'clr2p2': '#7CB342', 'clr3p2': '#000000', 'clr4p2': '#F1F8E9', 'Hshow': 'yellow', 'Htest': 'l_green', 'stim_var': 'l_up', 'blank_clr': 'clr3', 'difficulty': 'low', 'answ': 'left', 'l_test': '#AED581', 'r_test': '#DCEDC8', 'realclr2': '#7CB342', 'realclr3': '#AED581', 'realclr': '#AED581', 'fake_hue': 'l_green'}, {'ID': 77, 'clr1p1': '#3E2723', 'clr2p1': '#6D4C41', 'clr3p1': '#A1887F', 'clr4p1': '#EFEBE9', 'clr1p2': '#006064', 'clr2p2': '#00ACC1', 'clr3p2': '#000000', 'clr4p2': '#E0F7FA', 'Hshow': 'brown', 'Htest': 'cyan', 'stim_var': 'l_up', 'blank_clr': 'clr3', 'difficulty': 'low', 'answ': 'left', 'l_test': '#4DD0E1', 'r_test': '#B2EBF2', 'realclr2': '#00ACC1', 'realclr3': '#4DD0E1', 'realclr': '#4DD0E1', 'fake_hue': 'cyan'}, {'ID': 79, 'clr1p1': '#FF6F00', 'clr2p1': '#FFB300', 'clr3p1': '#FFD54F', 'clr4p1': '#FFF8E1', 'clr1p2': '#1A237E', 'clr2p2': '#3949AB', 'clr3p2': '#000000', 'clr4p2': '#E8EAF6', 'Hshow': 'amber', 'Htest': 'indigo', 'stim_var': 'l_up', 'blank_clr': 'clr3', 'difficulty': 'low', 'answ': 'right', 'l_test': '#C5CAE9', 'r_test': '#7986CB', 'realclr2': '#3949AB', 'realclr3': '#7986CB', 'realclr': '#7986CB', 'fake_hue': 'indigo'}, {'ID': 80, 'clr1p1': '#E65100', 'clr2p1': '#FB8C00', 'clr3p1': '#FFB74D', 'clr4p1': '#FFF3E0', 'clr1p2': '#1A237E', 'clr2p2': '#3949AB', 'clr3p2': '#000000', 'clr4p2': '#E8EAF6', 'Hshow': 'orange', 'Htest': 'indigo', 'stim_var': 'l_up', 'blank_clr': 'clr3', 'difficulty': 'low', 'answ': 'right', 'l_test': '#7986CB', 'r_test': '#3F51B5', 'realclr2': '#3949AB', 'realclr3': '#7986CB', 'realclr': '#7986CB', 'fake_hue': 'indigo'}, {'ID': 81, 'clr1p1': '#FFEBEE', 'clr2p1': '#E57373', 'clr3p1': '#E53935', 'clr4p1': '#B71C1C', 'clr1p2': '#E1F5FE', 'clr2p2': '#000000', 'clr3p2': '#039BE5', 'clr4p2': '#01579B', 'Hshow': 'red', 'Htest': 'l_blue', 'stim_var': 'l_down', 'blank_clr': 'clr2', 'difficulty': 'none', 'answ': 'left', 'l_test': '#4FC3F7', 'r_test': '#7986CB', 'realclr2': '#4FC3F7', 'realclr3': '#039BE5', 'realclr': '#4FC3F7', 'fake_hue': 'indigo'}, {'ID': 83, 'clr1p1': '#EFEBE9', 'clr2p1': '#A1887F', 'clr3p1': '#6D4C41', 'clr4p1': '#3E2723', 'clr1p2': '#E8F5E9', 'clr2p2': '#000000', 'clr3p2': '#43A047', 'clr4p2': '#1B5E20', 'Hshow': 'brown', 'Htest': 'green', 'stim_var': 'l_down', 'blank_clr': 'clr2', 'difficulty': 'none', 'answ': 'left', 'l_test': '#81C784', 'r_test': '#4DD0E1', 'realclr2': '#81C784', 'realclr3': '#43A047', 'realclr': '#81C784', 'fake_hue': 'cyan'}, {'ID': 84, 'clr1p1': '#FFEBEE', 'clr2p1': '#E57373', 'clr3p1': '#E53935', 'clr4p1': '#B71C1C', 'clr1p2': '#FFFDE7', 'clr2p2': '#000000', 'clr3p2': '#FDD835', 'clr4p2': '#F57F17', 'Hshow': 'red', 'Htest': 'yellow', 'stim_var': 'l_down', 'blank_clr': 'clr2', 'difficulty': 'none', 'answ': 'left', 'l_test': '#FFF176', 'r_test': '#AED581', 'realclr2': '#FFF176', 'realclr3': '#FDD835', 'realclr': '#FFF176', 'fake_hue': 'l_green'}, {'ID': 85, 'clr1p1': '#FCE4EC', 'clr2p1': '#F06292', 'clr3p1': '#D81B60', 'clr4p1': '#880E4F', 'clr1p2': '#FBE9E7', 'clr2p2': '#000000', 'clr3p2': '#F4511E', 'clr4p2': '#BF360C', 'Hshow': 'pink', 'Htest': 'd_orange', 'stim_var': 'l_down', 'blank_clr': 'clr2', 'difficulty': 'none', 'answ': 'right', 'l_test': '#FFD54F', 'r_test': '#FF8A65', 'realclr2': '#FF8A65', 'realclr3': '#F4511E', 'realclr': '#FF8A65', 'fake_hue': 'amber'}, {'ID': 86, 'clr1p1': '#E8F5E9', 'clr2p1': '#81C784', 'clr3p1': '#43A047', 'clr4p1': '#1B5E20', 'clr1p2': '#FFEBEE', 'clr2p2': '#000000', 'clr3p2': '#E53935', 'clr4p2': '#B71C1C', 'Hshow': 'green', 'Htest': 'red', 'stim_var': 'l_down', 'blank_clr': 'clr2', 'difficulty': 'none', 'answ': 'right', 'l_test': '#FFB74D', 'r_test': '#E57373', 'realclr2': '#E57373', 'realclr3': '#E53935', 'realclr': '#E57373', 'fake_hue': 'orange'}, {'ID': 87, 'clr1p1': '#E8EAF6', 'clr2p1': '#7986CB', 'clr3p1': '#3949AB', 'clr4p1': '#1A237E', 'clr1p2': '#FFF3E0', 'clr2p2': '#FFB74D', 'clr3p2': '#000000', 'clr4p2': '#E65100', 'Hshow': 'indigo', 'Htest': 'orange', 'stim_var': 'l_down', 'blank_clr': 'clr3', 'difficulty': 'none', 'answ': 'left', 'l_test': '#FB8C00', 'r_test': '#E53935', 'realclr2': '#FFB74D', 'realclr3': '#FB8C00', 'realclr': '#FB8C00', 'fake_hue': 'red'}, {'ID': 88, 'clr1p1': '#FFFDE7', 'clr2p1': '#FFF176', 'clr3p1': '#FDD835', 'clr4p1': '#F57F17', 'clr1p2': '#E0F7FA', 'clr2p2': '#4DD0E1', 'clr3p2': '#000000', 'clr4p2': '#006064', 'Hshow': 'yellow', 'Htest': 'cyan', 'stim_var': 'l_down', 'blank_clr': 'clr3', 'difficulty': 'none', 'answ': 'left', 'l_test': '#00ACC1', 'r_test': '#1E88E5', 'realclr2': '#4DD0E1', 'realclr3': '#00ACC1', 'realclr': '#00ACC1', 'fake_hue': 'blue'}, {'ID': 90, 'clr1p1': '#FFF8E1', 'clr2p1': '#FFD54F', 'clr3p1': '#FFB300', 'clr4p1': '#FF6F00', 'clr1p2': '#E8EAF6', 'clr2p2': '#7986CB', 'clr3p2': '#000000', 'clr4p2': '#1A237E', 'Hshow': 'amber', 'Htest': 'indigo', 'stim_var': 'l_down', 'blank_clr': 'clr3', 'difficulty': 'none', 'answ': 'right', 'l_test': '#039BE5', 'r_test': '#3949AB', 'realclr2': '#7986CB', 'realclr3': '#3949AB', 'realclr': '#3949AB', 'fake_hue': 'l_blue'}, {'ID': 91, 'clr1p1': '#8E24AA', 'clr2p1': '#4A148C', 'clr3p1': '#F3E5F5', 'clr4p1': '#BA68C8', 'clr1p2': '#5E35B1', 'clr2p2': '#000000', 'clr3p2': '#EDE7F6', 'clr4p2': '#9575CD', 'Hshow': 'purple', 'Htest': 'd_purple', 'stim_var': 'l_rand1', 'blank_clr': 'clr2', 'difficulty': 'none', 'answ': 'left', 'l_test': '#311B92', 'r_test': '#880E4F', 'realclr2': '#311B92', 'realclr3': '#EDE7F6', 'realclr': '#311B92', 'fake_hue': 'pink'}, {'ID': 93, 'clr1p1': '#7CB342', 'clr2p1': '#33691E', 'clr3p1': '#F1F8E9', 'clr4p1': '#AED581', 'clr1p2': '#8E24AA', 'clr2p2': '#000000', 'clr3p2': '#F3E5F5', 'clr4p2': '#BA68C8', 'Hshow': 'l_green', 'Htest': 'purple', 'stim_var': 'l_rand1', 'blank_clr': 'clr2', 'difficulty': 'none', 'answ': 'left', 'l_test': '#4A148C', 'r_test': '#B71C1C', 'realclr2': '#4A148C', 'realclr3': '#F3E5F5', 'realclr': '#4A148C', 'fake_hue': 'red'}, {'ID': 94, 'clr1p1': '#FB8C00', 'clr2p1': '#E65100', 'clr3p1': '#FFF3E0', 'clr4p1': '#FFB74D', 'clr1p2': '#FDD835', 'clr2p2': '#000000', 'clr3p2': '#FFFDE7', 'clr4p2': '#FFF176', 'Hshow': 'orange', 'Htest': 'yellow', 'stim_var': 'l_rand1', 'blank_clr': 'clr2', 'difficulty': 'none', 'answ': 'left', 'l_test': '#F57F17', 'r_test': '#33691E', 'realclr2': '#F57F17', 'realclr3': '#FFFDE7', 'realclr': '#F57F17', 'fake_hue': 'l_green'}, {'ID': 95, 'clr1p1': '#3949AB', 'clr2p1': '#1A237E', 'clr3p1': '#E8EAF6', 'clr4p1': '#7986CB', 'clr1p2': '#7CB342', 'clr2p2': '#000000', 'clr3p2': '#F1F8E9', 'clr4p2': '#AED581', 'Hshow': 'indigo', 'Htest': 'l_green', 'stim_var': 'l_rand1', 'blank_clr': 'clr2', 'difficulty': 'none', 'answ': 'left', 'l_test': '#33691E', 'r_test': '#004D40', 'realclr2': '#33691E', 'realclr3': '#F1F8E9', 'realclr': '#33691E', 'fake_hue': 'teal'}, {'ID': 96, 'clr1p1': '#FDD835', 'clr2p1': '#F57F17', 'clr3p1': '#FFFDE7', 'clr4p1': '#FFF176', 'clr1p2': '#FFB300', 'clr2p2': '#FF6F00', 'clr3p2': '#000000', 'clr4p2': '#FFD54F', 'Hshow': 'yellow', 'Htest': 'amber', 'stim_var': 'l_rand1', 'blank_clr': 'clr3', 'difficulty': 'none', 'answ': 'left', 'l_test': '#FFF8E1', 'r_test': '#F9FBE7', 'realclr2': '#FF6F00', 'realclr3': '#FFF8E1', 'realclr': '#FFF8E1', 'fake_hue': 'lime'}, {'ID': 97, 'clr1p1': '#D81B60', 'clr2p1': '#880E4F', 'clr3p1': '#FCE4EC', 'clr4p1': '#F06292', 'clr1p2': '#FDD835', 'clr2p2': '#F57F17', 'clr3p2': '#000000', 'clr4p2': '#FFF176', 'Hshow': 'pink', 'Htest': 'yellow', 'stim_var': 'l_rand1', 'blank_clr': 'clr3', 'difficulty': 'none', 'answ': 'right', 'l_test': '#FFF3E0', 'r_test': '#FFFDE7', 'realclr2': '#F57F17', 'realclr3': '#FFFDE7', 'realclr': '#FFFDE7', 'fake_hue': 'orange'}, {'ID': 99, 'clr1p1': '#43A047', 'clr2p1': '#1B5E20', 'clr3p1': '#E8F5E9', 'clr4p1': '#81C784', 'clr1p2': '#00897B', 'clr2p2': '#004D40', 'clr3p2': '#000000', 'clr4p2': '#4DB6AC', 'Hshow': 'green', 'Htest': 'teal', 'stim_var': 'l_rand1', 'blank_clr': 'clr3', 'difficulty': 'none', 'answ': 'right', 'l_test': '#E1F5FE', 'r_test': '#E0F2F1', 'realclr2': '#004D40', 'realclr3': '#E0F2F1', 'realclr': '#E0F2F1', 'fake_hue': 'l_blue'}, {'ID': 100, 'clr1p1': '#FFB300', 'clr2p1': '#FF6F00', 'clr3p1': '#FFF8E1', 'clr4p1': '#FFD54F', 'clr1p2': '#039BE5', 'clr2p2': '#01579B', 'clr3p2': '#000000', 'clr4p2': '#4FC3F7', 'Hshow': 'amber', 'Htest': 'l_blue', 'stim_var': 'l_rand1', 'blank_clr': 'clr3', 'difficulty': 'none', 'answ': 'right', 'l_test': '#E8EAF6', 'r_test': '#E1F5FE', 'realclr2': '#01579B', 'realclr3': '#E1F5FE', 'realclr': '#E1F5FE', 'fake_hue': 'indigo'}, {'ID': 101, 'clr1p1': '#880E4F', 'clr2p1': '#FCE4EC', 'clr3p1': '#D81B60', 'clr4p1': '#F06292', 'clr1p2': '#33691E', 'clr2p2': '#000000', 'clr3p2': '#7CB342', 'clr4p2': '#AED581', 'Hshow': 'pink', 'Htest': 'l_green', 'stim_var': 'l_rand2', 'blank_clr': 'clr2', 'difficulty': 'none', 'answ': 'left', 'l_test': '#F1F8E9', 'r_test': '#FFFDE7', 'realclr2': '#F1F8E9', 'realclr3': '#7CB342', 'realclr': '#F1F8E9', 'fake_hue': 'yellow'}, {'ID': 102, 'clr1p1': '#0D47A1', 'clr2p1': '#E3F2FD', 'clr3p1': '#1E88E5', 'clr4p1': '#64B5F6', 'clr1p2': '#4A148C', 'clr2p2': '#000000', 'clr3p2': '#8E24AA', 'clr4p2': '#BA68C8', 'Hshow': 'blue', 'Htest': 'purple', 'stim_var': 'l_rand2', 'blank_clr': 'clr2', 'difficulty': 'none', 'answ': 'left', 'l_test': '#F3E5F5', 'r_test': '#FFEBEE', 'realclr2': '#F3E5F5', 'realclr3': '#8E24AA', 'realclr': '#F3E5F5', 'fake_hue': 'red'}, {'ID': 103, 'clr1p1': '#1B5E20', 'clr2p1': '#E8F5E9', 'clr3p1': '#43A047', 'clr4p1': '#81C784', 'clr1p2': '#006064', 'clr2p2': '#000000', 'clr3p2': '#00ACC1', 'clr4p2': '#4DD0E1', 'Hshow': 'green', 'Htest': 'cyan', 'stim_var': 'l_rand2', 'blank_clr': 'clr2', 'difficulty': 'none', 'answ': 'left', 'l_test': '#E0F7FA', 'r_test': '#E8F5E9', 'realclr2': '#E0F7FA', 'realclr3': '#00ACC1', 'realclr': '#E0F7FA', 'fake_hue': 'green'}, {'ID': 104, 'clr1p1': '#FF6F00', 'clr2p1': '#FFF8E1', 'clr3p1': '#FFB300', 'clr4p1': '#FFD54F', 'clr1p2': '#880E4F', 'clr2p2': '#000000', 'clr3p2': '#D81B60', 'clr4p2': '#F06292', 'Hshow': 'amber', 'Htest': 'pink', 'stim_var': 'l_rand2', 'blank_clr': 'clr2', 'difficulty': 'none', 'answ': 'left', 'l_test': '#FCE4EC', 'r_test': '#EDE7F6', 'realclr2': '#FCE4EC', 'realclr3': '#D81B60', 'realclr': '#FCE4EC', 'fake_hue': 'd_purple'}, {'ID': 106, 'clr1p1': '#B71C1C', 'clr2p1': '#FFEBEE', 'clr3p1': '#E53935', 'clr4p1': '#E57373', 'clr1p2': '#1A237E', 'clr2p2': '#E8EAF6', 'clr3p2': '#000000', 'clr4p2': '#7986CB', 'Hshow': 'red', 'Htest': 'indigo', 'stim_var': 'l_rand2', 'blank_clr': 'clr3', 'difficulty': 'none', 'answ': 'right', 'l_test': '#8E24AA', 'r_test': '#3949AB', 'realclr2': '#E8EAF6', 'realclr3': '#3949AB', 'realclr': '#3949AB', 'fake_hue': 'purple'}, {'ID': 107, 'clr1p1': '#1A237E', 'clr2p1': '#E8EAF6', 'clr3p1': '#3949AB', 'clr4p1': '#7986CB', 'clr1p2': '#01579B', 'clr2p2': '#E1F5FE', 'clr3p2': '#000000', 'clr4p2': '#4FC3F7', 'Hshow': 'indigo', 'Htest': 'l_blue', 'stim_var': 'l_rand2', 'blank_clr': 'clr3', 'difficulty': 'none', 'answ': 'right', 'l_test': '#00897B', 'r_test': '#039BE5', 'realclr2': '#E1F5FE', 'realclr3': '#039BE5', 'realclr': '#039BE5', 'fake_hue': 'teal'}, {'ID': 109, 'clr1p1': '#F57F17', 'clr2p1': '#FFFDE7', 'clr3p1': '#FDD835', 'clr4p1': '#FFF176', 'clr1p2': '#BF360C', 'clr2p2': '#FBE9E7', 'clr3p2': '#000000', 'clr4p2': '#FF8A65', 'Hshow': 'yellow', 'Htest': 'd_orange', 'stim_var': 'l_rand2', 'blank_clr': 'clr3', 'difficulty': 'none', 'answ': 'right', 'l_test': '#D81B60', 'r_test': '#F4511E', 'realclr2': '#FBE9E7', 'realclr3': '#F4511E', 'realclr': '#F4511E', 'fake_hue': 'pink'}, {'ID': 110, 'clr1p1': '#3E2723', 'clr2p1': '#EFEBE9', 'clr3p1': '#6D4C41', 'clr4p1': '#A1887F', 'clr1p2': '#0D47A1', 'clr2p2': '#E3F2FD', 'clr3p2': '#000000', 'clr4p2': '#64B5F6', 'Hshow': 'brown', 'Htest': 'blue', 'stim_var': 'l_rand2', 'blank_clr': 'clr3', 'difficulty': 'none', 'answ': 'right', 'l_test': '#5E35B1', 'r_test': '#1E88E5', 'realclr2': '#E3F2FD', 'realclr3': '#1E88E5', 'realclr': '#1E88E5', 'fake_hue': 'd_purple'}, {'ID': 111, 'clr1p1': '#4A148C', 'clr2p1': '#8E24AA', 'clr3p1': '#BA68C8', 'clr4p1': '#F3E5F5', 'clr1p2': '#0D47A1', 'clr2p2': '#000000', 'clr3p2': '#64B5F6', 'clr4p2': '#E3F2FD', 'Hshow': 'purple', 'Htest': 'blue', 'stim_var': 'l_up', 'blank_clr': 'clr2', 'difficulty': 'none', 'answ': 'left', 'l_test': '#1E88E5', 'r_test': '#00ACC1', 'realclr2': '#1E88E5', 'realclr3': '#64B5F6', 'realclr': '#1E88E5', 'fake_hue': 'cyan'}, {'ID': 112, 'clr1p1': '#33691E', 'clr2p1': '#7CB342', 'clr3p1': '#AED581', 'clr4p1': '#F1F8E9', 'clr1p2': '#880E4F', 'clr2p2': '#000000', 'clr3p2': '#F06292', 'clr4p2': '#FCE4EC', 'Hshow': 'l_green', 'Htest': 'pink', 'stim_var': 'l_up', 'blank_clr': 'clr2', 'difficulty': 'none', 'answ': 'left', 'l_test': '#D81B60', 'r_test': '#5E35B1', 'realclr2': '#D81B60', 'realclr3': '#F06292', 'realclr': '#D81B60', 'fake_hue': 'd_purple'}, {'ID': 114, 'clr1p1': '#827717', 'clr2p1': '#C0CA33', 'clr3p1': '#DCE775', 'clr4p1': '#F9FBE7', 'clr1p2': '#004D40', 'clr2p2': '#000000', 'clr3p2': '#4DB6AC', 'clr4p2': '#E0F2F1', 'Hshow': 'lime', 'Htest': 'teal', 'stim_var': 'l_up', 'blank_clr': 'clr2', 'difficulty': 'none', 'answ': 'right', 'l_test': '#039BE5', 'r_test': '#00897B', 'realclr2': '#00897B', 'realclr3': '#4DB6AC', 'realclr': '#00897B', 'fake_hue': 'l_blue'}, {'ID': 115, 'clr1p1': '#311B92', 'clr2p1': '#5E35B1', 'clr3p1': '#9575CD', 'clr4p1': '#EDE7F6', 'clr1p2': '#880E4F', 'clr2p2': '#000000', 'clr3p2': '#F06292', 'clr4p2': '#FCE4EC', 'Hshow': 'd_purple', 'Htest': 'pink', 'stim_var': 'l_up', 'blank_clr': 'clr2', 'difficulty': 'none', 'answ': 'right', 'l_test': '#F4511E', 'r_test': '#D81B60', 'realclr2': '#D81B60', 'realclr3': '#F06292', 'realclr': '#D81B60', 'fake_hue': 'd_orange'}, {'ID': 116, 'clr1p1': '#1B5E20', 'clr2p1': '#43A047', 'clr3p1': '#81C784', 'clr4p1': '#E8F5E9', 'clr1p2': '#004D40', 'clr2p2': '#000000', 'clr3p2': '#4DB6AC', 'clr4p2': '#E0F2F1', 'Hshow': 'green', 'Htest': 'teal', 'stim_var': 'l_up', 'blank_clr': 'clr2', 'difficulty': 'none', 'answ': 'right', 'l_test': '#7CB342', 'r_test': '#00897B', 'realclr2': '#00897B', 'realclr3': '#4DB6AC', 'realclr': '#00897B', 'fake_hue': 'l_green'}, {'ID': 118, 'clr1p1': '#E65100', 'clr2p1': '#FB8C00', 'clr3p1': '#FFB74D', 'clr4p1': '#FFF3E0', 'clr1p2': '#0D47A1', 'clr2p2': '#1E88E5', 'clr3p2': '#000000', 'clr4p2': '#E3F2FD', 'Hshow': 'orange', 'Htest': 'blue', 'stim_var': 'l_up', 'blank_clr': 'clr3', 'difficulty': 'none', 'answ': 'left', 'l_test': '#64B5F6', 'r_test': '#4DD0E1', 'realclr2': '#1E88E5', 'realclr3': '#64B5F6', 'realclr': '#64B5F6', 'fake_hue': 'cyan'}, {'ID': 119, 'clr1p1': '#006064', 'clr2p1': '#00ACC1', 'clr3p1': '#4DD0E1', 'clr4p1': '#E0F7FA', 'clr1p2': '#01579B', 'clr2p2': '#039BE5', 'clr3p2': '#000000', 'clr4p2': '#E1F5FE', 'Hshow': 'cyan', 'Htest': 'l_blue', 'stim_var': 'l_up', 'blank_clr': 'clr3', 'difficulty': 'none', 'answ': 'right', 'l_test': '#4DB6AC', 'r_test': '#4FC3F7', 'realclr2': '#039BE5', 'realclr3': '#4FC3F7', 'realclr': '#4FC3F7', 'fake_hue': 'teal'}, {'ID': 120, 'clr1p1': '#BF360C', 'clr2p1': '#F4511E', 'clr3p1': '#FF8A65', 'clr4p1': '#FBE9E7', 'clr1p2': '#33691E', 'clr2p2': '#7CB342', 'clr3p2': '#000000', 'clr4p2': '#F1F8E9', 'Hshow': 'd_orange', 'Htest': 'l_green', 'stim_var': 'l_up', 'blank_clr': 'clr3', 'difficulty': 'none', 'answ': 'right', 'l_test': '#FFF176', 'r_test': '#AED581', 'realclr2': '#7CB342', 'realclr3': '#AED581', 'realclr': '#AED581', 'fake_hue': 'yellow'}]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="CC_easylowhard_generalcond.xlsx" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="name" updates="None" val="trials" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="CC_trial"/>
+    <Routine name="blank"/>
+    <Routine name="CC_answer"/>
+    <Routine name="blank"/>
+    <LoopTerminator name="trials"/>
+    <Routine name="finish"/>
+  </Flow>
+</PsychoPy2experiment>

@@ -1,0 +1,37 @@
+{
+  "Name": "Farnsworth-Munsell 100 Hue Test",
+  "Abbreviation": "FM 100 Hue",
+  "Description": "A color discrimination test in which participants arrange colored squares in order of hue progression. Results are stored as the final ordered sequence for each row.",
+  "Columns": {
+    "participant_id": {
+      "Description": "Anonymized participant identifier."
+    },
+    "Row 1 Result": {
+      "Description": "Final ordered sequence of caps for row 1.",
+      "Type": "string",
+      "Format": "Comma-separated two-digit cap identifiers",
+      "Example": "01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22"
+    },
+    "Row 2 Result": {
+      "Description": "Final ordered sequence of caps for row 2.",
+      "Type": "string",
+      "Format": "Comma-separated two-digit cap identifiers",
+      "Example": "22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43"
+    },
+    "Row 3 Result": {
+      "Description": "Final ordered sequence of caps for row 3.",
+      "Type": "string",
+      "Format": "Comma-separated two-digit cap identifiers",
+      "Example": "43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64"
+    },
+    "Row 4 Result": {
+      "Description": "Final ordered sequence of caps for row 4.",
+      "Type": "string",
+      "Format": "Comma-separated two-digit cap identifiers",
+      "Example": "64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85"
+    }
+  },
+  "Notes": [
+    "If needed, total error score (TES) should be computed separately and stored in another derived results file or column."
+  ]
+}
